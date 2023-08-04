@@ -1,0 +1,720 @@
+/* -------------------------- 1. Global Styles --------------------------------------- */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+
+/* -------------------- 2. Main Container Styles ------------------------------------ */
+
+#mainContainer {
+    position: relative;
+    padding-top: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    width: calc(100vw - 3vw);
+    position: absolute;
+    left: 0;
+    right: 3vw;
+    transition: width 0.42s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#f0f0f0;
+    border-radius: 1.5vh;
+    box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
+}
+
+#mainContainer.main-open {
+    width: 80vw;
+}
+
+#mainContainer.main-closed {
+    width: 98vw;
+}
+
+#mainContainer,
+#sidebar {
+    display: none;
+}
+
+
+/* ---------------------- 3. Navigation Styles -------------------------------------- */
+
+/* Reset some properties */
+nav,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 5vh;
+}
+
+/* Style the navigation links */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0;
+    height: 100%;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 1.6vw;
+    height: 100%;
+}
+
+/* Style the image within the link */
+nav ul li a img {
+    height: 1.2vw;
+    width: 1.2vw;
+}
+
+/* Change color on hover */
+nav ul li:hover {
+    background-color: #111;
+    transition: background-color 0.2s;
+}
+
+
+/* -------------------- 4. Popup Form Styles --------------------------------------- */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.3vh solid #999999;
+    z-index: 9;
+    max-width: 30vw;
+    padding: 2vh;
+    background-color: #f1f1f1;
+}
+
+.container {
+    padding: 2vh;
+    background-color: #f1f1f1;
+}
+
+.container input[type=text],
+.container input[type=password] {
+    width: 100%;
+    padding: 1.5vh;
+    margin: 0.5vh 0 2vh 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.container input[type=text]:focus,
+.container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.container .btn {
+    background-color: #9f9f9f;
+    color: white;
+    padding: 1.6vh 2vw;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1vh;
+    opacity: 0.8;
+}
+
+.container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+#login-popup,
+#signup-popup {
+    display: none;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.google-button {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 0.1vh;
+    background-color: #000;
+}
+
+.or-box {
+    margin: 0 1vw;
+    padding: 0.5vh 1vw;
+    background-color: #fff;
+}
+
+
+/* -------------------- 5. Chat Area Styles --------------------------------------- */
+
+#mainContainer.main-open #chatAreaWrapper,
+#mainContainer.main-open #inputContainer,
+#mainContainer.main-open #controlContainer,
+#mainContainer.main-open #apiKeyDisplay,
+#mainContainer.main-open #modelNameDisplay {
+    width: 80vw;
+    /* Adjusted width to match the main container */
+    margin-left: 0vw;
+    /* Adjust this value based on your sidebar width */
+    transition: width 0.42s ease-in-out, margin-left 0.42s ease-in-out;
+    /* Added transition */
+}
+
+#greetingContainer {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+#botAvatarGreeting {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+}
+
+#greetingMessage {
+    font-size: 1.2vh;
+    color: #333;
+}
+
+#chatAreaWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    transition: width 0.42s ease-in-out;
+}
+
+#chatArea {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 70vh;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+    margin-top: 6vh;
+    border: none;
+    border-radius: 1.5vh;
+    padding: 1vh;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0.1vh;
+    border-color: #9f9f9f;
+    top: 5vh;
+}
+
+#chatArea::-webkit-scrollbar {
+    width: 1vh;
+}
+
+#chatArea::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5vh;
+}
+
+#chatArea::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.message {
+    max-width: 80vw;
+    min-width: 40vw;
+    padding: 1vh;
+    margin: 1vh 0;
+    border-radius: 1.5vh;
+    display: inline-block;
+    font-size: 2vh;
+    line-height: 1.5;
+}
+
+.message-bot {
+    background-color: #9f9f9f;
+    color: white;
+}
+
+.message-user {
+    background-color: #ddd;
+    color: #333;
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin: 1vh 0;
+}
+
+.user-wrapper {
+    flex-direction: row-reverse;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container-bot {
+    align-items: flex-start;
+}
+
+.message-container-user {
+    align-items: flex-end;
+}
+
+.bot-wrapper {
+    flex-direction: row;
+}
+
+.avatar {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.15vh;
+    border-color: #9f9f9f;
+    height: 4vh;
+    width: 4vh;
+    margin: 1vh 0 0 0;
+}
+
+.avatar-user {
+    margin-left: 1vh;
+}
+
+.avatar-bot {
+    margin-right: 0.8vh;
+}
+
+.timestamp {
+    font-size: 0.8vh;
+    color: grey;
+}
+
+
+/* ---------------------- 6. Input Area Styles --------------------------------------- */
+
+#mainContainer.main-open #inputContainer {
+    width: 60vw;
+    /* Adjusted width */
+    margin-left: 10vw;
+    /* Adjusted left margin */
+    bottom: 17vh;
+    /* Adjusted value to bring it up when sidebar is open */
+    transition: width 0.42s ease-in-out, margin-left 0.42s ease-in-out, bottom 0.42s ease-in-out;
+    /* Added transition */
+}
+
+#inputContainer {
+    position: absolute;
+        /* Make sure this line is present */
+    width: 60vw;
+    /* Adjusted width */
+    height: auto;
+    /* Let the container size itself according to its content */
+    padding: 1vh 0;
+    /* Added some vertical padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+    margin-left: 20vw;
+    /* Adjusted left margin */
+    bottom: 17vh;
+}
+
+#inputText {
+    width: 70vw;
+    /* Adjusted width */
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh;
+    outline: none;
+    font-size: 1.2vh;
+    font-style: normal;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-right: 0;
+}
+
+#inputText::placeholder {
+    font-style: italic;
+}
+
+#submitButton {
+    background-color: #9f9f9f;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh 0;
+    margin-left: 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    /* Adjusted width */
+}
+
+#submitButton:hover {
+    background-color: #7f7f7f;
+}
+
+
+/* -------------------- 7. Control Area Styles -------------------------------------- */
+
+/* Add this to the 7. Control Area Styles */
+#mainContainer.main-open #controlContainer {
+    width: 60vw;
+    /* Adjusted width */
+    margin-left: 10vw;
+    /* Centers the controlContainer */
+    bottom: 12vh;
+    /* Adjusted value to bring it up when sidebar is open */
+    transition: width 0.42s ease-in-out, margin-left 0.42s ease-in-out, bottom 0.42s ease-in-out;
+    /* Added transition */
+}
+
+#controlContainer {
+    position: absolute;
+        /* Make sure this line is present */
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    /* Adjusted width */
+    margin-left: 20vw;
+        /* Centers the controlContainer */
+    bottom: 12vh;
+}
+
+#clearChat,
+#saveChat,
+#apiSelect {
+    background-color: #9f9f9f;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3vh;
+    width: calc((80vw - 2vh) / 3);
+    /* Adjusted width */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+#clearChat {
+    margin-left: 3vw;
+}
+
+#saveChat {
+    margin-right: 3vw;
+}
+
+.clear-button {
+    width: 11vh;
+}
+
+/* -------------------- 8. API Area Styles ---------------------------------------- */
+
+#mainContainer.main-open #apiKeyDisplay,
+#mainContainer.main-open #modelNameDisplay {
+    left: 41vw;
+    transform: translateX(-50%);
+    bottom: 8vh;
+    transition: left 0.42s ease-in-out, bottom 0.42s ease-in-out;
+}
+
+#modelNameDisplay,
+#apiKeyDisplay {
+    position: absolute;
+    left: 51vw;
+    /* Centers the element horizontally */
+    transform: translateX(-50%);
+    /* Shifts the element left by half its width */
+    bottom: 8vh;
+    width: 20vw;
+    /* You can adjust the width as needed */
+    color: #333;
+    font-size: 1.2vh;
+    font-style: italic;
+    text-align: center;
+}
+
+#modelNameDisplay {
+    margin-top: -1vh;
+}
+
+/* -------------------------- 9. Sidebar Styles ------------------------------------ */
+
+/* Add this to the 9. Sidebar Styles */
+#sidebar.open~#mainContainer.main-open {
+    width: calc(100vw - 20vw); /* Adjusted width */
+}
+
+#sidebar {
+    position: fixed;
+    width: 20vw;
+    right: -20vw;
+    top: 0;
+    height: 100vh;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #ededed;
+    box-sizing: border-box;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensuring correct stacking order */
+    border-left: 1px solid #999999;
+    border-top-left-radius: 1.5vh;
+    border-bottom-left-radius: 1.5vh;
+}
+
+#sidebar.open {
+    right: 0;
+    transition: 0.5s;
+}
+
+#sidebar.closed {
+    right: -20vw;
+}
+
+#sidebar.open~#mainContainer {
+    width: calc(100vw - 20vw);
+}
+
+#sidebar.closed~#mainContainer {
+    width: calc(100vw);
+}
+
+#sidebarToggleWrapper {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    z-index: 2001;
+}
+
+#sidebarToggle {
+    position: relative;
+    padding: 0.5vw;
+    padding-bottom: 0;
+    cursor: pointer;
+    z-index: 2002;
+    display: block;
+}
+
+/* ----------------- 10. Sidebar Buttons Styles ------------------------------------- */
+
+#sidebarButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+    /* Aligned buttons to the left side of the container */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0vh;
+    padding-left: 2vw;
+    /* Added some padding to move away from the left edge */
+    top: 98vh
+}
+
+
+.clear-button,
+.logout-button {
+    background-color: #9f9f9f;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3vh;
+    width: 30%;
+    /* Adjusted the width to make the buttons smaller */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    /* Added space between buttons */
+    margin-bottom: 5vh;
+}
+
+.clear-button:hover,
+.logout-button:hover {
+    background-color: #7f7f7f;
+}
+
+#clearChat:hover,
+#saveChat:hover,
+.clear-button:hover {
+    background-color: #7f7f7f;
+}
+
+
+
+/* --------------------- 11. Saved Chats Styles ------------------------------------ */
+
+#savedChatsContainer {
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #646464;
+    padding: 0.5vw;
+    border-radius: 1.5vh;
+    box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
+    height: 80vh;
+}
+
+#saveChats {
+    align-items: center;
+    justify-content: center;
+}
+
+#savedChatsList {
+    list-style: none;
+    padding-left: 0.1vw;
+    padding-right: 1vw;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding-top: 2.5vh;
+    border-radius: 1.5vh;
+    box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+#savedChatsList::-webkit-scrollbar {
+    width: 1vh;
+}
+
+#savedChatsList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5vh;
+}
+
+#savedChatsList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.list-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.titleAndTrashContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 0.5vh;
+    padding: 0.5vh 1vw;
+}
+
+.title,
+.titleButton {
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.2vw;
+    margin-left: 0.2vw;
+    border: 0.1vw solid #888;
+    border-radius: 0.5vh;
+}
+
+.title:hover,
+.titleButton:hover {
+    background-color: #888;
+}
+
+.fa-trash-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-left: 0.2vw;
+    margin-right: 0.2vw;
+    border: 0.1vw solid #888;
+    border-radius: 0.5vh;
+    padding: 0.2vw;
+}
