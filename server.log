@@ -185,3 +185,4 @@ https://cloud.google.com/docs/authentication/getting-started
 2023-08-12T04:54:12.562Z - Received POST request on /api
 2023-08-12T04:54:25.818Z - Received POST request on /api
 2023-08-12T04:54:25.818Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:00:00.789Z - Server listening on port 8080
