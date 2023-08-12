@@ -1,3 +1,70 @@
+/*var(--primary-color);
+ var(--secondary-color);
+ var(--tertiary-color);
+ var(--background-color);
+ var(--border-color);
+ var(--text-light-color);
+ var(--text-dark-color);
+ var(--nav-background-color);
+ var(--sidebar-background-color);
+ var(--savedChats-background-color);
+ var(--messages-background-color);
+ var(--messages-bot-bubble-color);
+ var(--messages-bot-text-color);
+ var(--messages-user-bubble-color);
+ var(--messages-user-text-color);
+ var(--timestamp-text-color);
+ var(--scrollbar-color);
+ var(--scrollbar-hover-color);
+ var(--button-hover-color);
+ */
+
+
+/* Earth Tones */
+
+:root {
+    --primary-color: #e3f2fd;
+    /* Blue Lightest */
+    --secondary-color: #b3e5fc;
+    /* Light Blue Light */
+    --tertiary-color: #e0e0e0;
+    /* Grey */
+    --text-light-color: #000000;
+    /* Black */
+    --text-dark-color: #000000;
+    /* Black for better readability */
+    --background-color: #fafafa;
+    /* Grey Lightest */
+    --border-color: #cfd8dc;
+    /* Blue Grey Light */
+    --nav-background-color: #e3f2fd;
+    /* Blue Lightest */
+    --sidebar-background-color: #fafafa;
+    /* Grey Lightest */
+    --savedChats-background-color: #e3f2fd;
+    /* Blue Grey Light */
+    --navHover-background-color: #b3e5fc;
+    /* Light Blue Light */
+    --messages-background-color: #fafafa;
+    /* Grey Lightest */
+    --messages-bot-bubble-color: #e3f2fd;
+    /* Blue Lightest */
+    --messages-bot-text-color: #000000;
+    /* Black */
+    --messages-user-bubble-color: #b3e5fc;
+    /* Light Blue Light */
+    --messages-user-text-color: #000000;
+    /* Black */
+    --timestamp-text-color: #000000;
+    /* Black */
+    --scrollbar-color: #e0e0e0;
+    /* Grey */
+    --scrollbar-hover-color: #bdbdbd;
+    /* Grey Dark */
+    --button-hover-color: #328db8;
+}
+
+
 /* -------------------------- 1. Global Styles --------------------------------------- */
 
 body {
@@ -8,7 +75,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -34,7 +101,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color:#f0f0f0;
+    background-color: var(--background-color);
     border-radius: 1.5vh;
     box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
 }
@@ -68,7 +135,7 @@ a {
 
 /* Style the navigation bar */
 nav {
-    background-color: #333;
+    background-color: var(--nav-background-color);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -93,7 +160,7 @@ nav ul li {
 nav ul li a {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     padding: 0 1.6vw;
     height: 100%;
@@ -107,7 +174,7 @@ nav ul li a img {
 
 /* Change color on hover */
 nav ul li:hover {
-    background-color: #111;
+    background-color: var(--navHover-background-color);
     transition: background-color 0.2s;
 }
 
@@ -120,16 +187,15 @@ nav ul li:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 0.3vh solid #999999;
-    z-index: 9;
+    border: 0.3vh solid var(--border-color);
     max-width: 30vw;
     padding: 2vh;
-    background-color: #f1f1f1;
+    background-color: var(--background-color);
 }
 
 .container {
     padding: 2vh;
-    background-color: #f1f1f1;
+    background-color: var(--background-color);
 }
 
 .container input[type=text],
@@ -138,18 +204,18 @@ nav ul li:hover {
     padding: 1.5vh;
     margin: 0.5vh 0 2vh 0;
     border: none;
-    background: #f1f1f1;
+    background: var(--background-color);
 }
 
 .container input[type=text]:focus,
 .container input[type=password]:focus {
-    background-color: #ddd;
+    background-color: var(--background-color);
     outline: none;
 }
 
 .container .btn {
-    background-color: #9f9f9f;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--primary-color);
     padding: 1.6vh 2vw;
     border: none;
     cursor: pointer;
@@ -190,13 +256,13 @@ nav ul li:hover {
 .line {
     flex-grow: 1;
     height: 0.1vh;
-    background-color: #000;
+    background-color: var(--background-color);
 }
 
 .or-box {
     margin: 0 1vw;
     padding: 0.5vh 1vw;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
 
@@ -228,7 +294,7 @@ nav ul li:hover {
 
 #greetingMessage {
     font-size: 1.2vh;
-    color: #333;
+    color: var(--text-color);
 }
 
 #chatAreaWrapper {
@@ -249,14 +315,14 @@ nav ul li:hover {
     margin-bottom: 2vh;
     margin-top: 6vh;
     border: none;
-    border-radius: 1.5vh;
+    border-radius: 0.5vh;
     padding: 1vh;
     overflow-y: auto;
-    background-color: #f0f0f0;
+    background-color: var(--messages-background-color);
     box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
     border-style: solid;
     border-width: 0.1vh;
-    border-color: #9f9f9f;
+    border-color: var(--border-color);
     top: 5vh;
 }
 
@@ -265,12 +331,12 @@ nav ul li:hover {
 }
 
 #chatArea::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 0.5vh;
+    background: var(--scrollbar-color);
+    border-radius: 1.5vh;
 }
 
 #chatArea::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--scrollbar-hover-color);
 }
 
 .message {
@@ -285,13 +351,13 @@ nav ul li:hover {
 }
 
 .message-bot {
-    background-color: #9f9f9f;
-    color: white;
+    background-color: var(--messages-bot-bubble-color);
+    color: var(--messages-bot-text-color);
 }
 
 .message-user {
-    background-color: #ddd;
-    color: #333;
+    background-color: var(--messages-user-bubble-color);
+    color: var(--messages-user-text-color);
 }
 
 .message-wrapper {
@@ -325,7 +391,7 @@ nav ul li:hover {
     border-radius: 50%;
     border-style: solid;
     border-width: 0.15vh;
-    border-color: #9f9f9f;
+    border-color: var(--border-color);
     height: 4vh;
     width: 4vh;
     margin: 1vh 0 0 0;
@@ -335,13 +401,66 @@ nav ul li:hover {
     margin-left: 1vh;
 }
 
+
+
+.avatar-user-icon {
+    width: 40px;
+        /* Adjust the width as needed */
+    height: 40px;
+        /* Adjust the height as needed */
+    border-radius: 50%;
+    object-fit: cover;
+        /* Ensures that the image maintains its aspect ratio */
+    cursor: pointer;
+        /* Changes the cursor to a pointer when hovering over the image */
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    color: #4b4b4b;
+    font-size: 4vh;
+        /* Adjust the font size as needed */
+    cursor: pointer;
+        /* Makes the icon clickable */
+}
+
+
+#userAvatarLabel {
+    cursor: pointer;
+}
+
+#userAvatarIcon {
+    font-size: 50px;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Makes the div clickable */
+}
+
+.avatar-container img,
+.avatar-container i {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.avatar-container img,
+.avatar-container i {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
 .avatar-bot {
     margin-right: 0.8vh;
 }
 
 .timestamp {
-    font-size: 0.8vh;
-    color: grey;
+    font-size: 1.5vh;
+    color: var(--timestamp-text-color);
 }
 
 
@@ -360,7 +479,7 @@ nav ul li:hover {
 
 #inputContainer {
     position: absolute;
-        /* Make sure this line is present */
+    /* Make sure this line is present */
     width: 60vw;
     /* Adjusted width */
     height: auto;
@@ -386,7 +505,7 @@ nav ul li:hover {
     font-size: 1.2vh;
     font-style: normal;
     box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: var(--background-color);
     margin-right: 0;
 }
 
@@ -395,8 +514,8 @@ nav ul li:hover {
 }
 
 #submitButton {
-    background-color: #9f9f9f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
     border: none;
     border-radius: 2vh;
     padding: 1vh 0;
@@ -415,7 +534,7 @@ nav ul li:hover {
 }
 
 #submitButton:hover {
-    background-color: #7f7f7f;
+    background-color: var(--button-hover-color);
 }
 
 
@@ -435,21 +554,21 @@ nav ul li:hover {
 
 #controlContainer {
     position: absolute;
-        /* Make sure this line is present */
+    /* Make sure this line is present */
     display: flex;
     justify-content: space-between;
     width: 60vw;
     /* Adjusted width */
     margin-left: 20vw;
-        /* Centers the controlContainer */
+    /* Centers the controlContainer */
     bottom: 12vh;
 }
 
 #clearChat,
 #saveChat,
 #apiSelect {
-    background-color: #9f9f9f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
     border: none;
     border-radius: 2vh;
     padding: 0.5vh 1vw;
@@ -467,6 +586,8 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     margin-top: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #clearChat {
@@ -501,7 +622,7 @@ nav ul li:hover {
     bottom: 8vh;
     width: 20vw;
     /* You can adjust the width as needed */
-    color: #333;
+    color: var(--text-dark-color);
     font-size: 1.2vh;
     font-style: italic;
     text-align: center;
@@ -515,7 +636,8 @@ nav ul li:hover {
 
 /* Add this to the 9. Sidebar Styles */
 #sidebar.open~#mainContainer.main-open {
-    width: calc(100vw - 20vw); /* Adjusted width */
+    width: calc(100vw - 20vw);
+    /* Adjusted width */
 }
 
 #sidebar {
@@ -529,13 +651,14 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    background-color: #ededed;
+    background-color: var(--sidebar-background-color);
     box-sizing: border-box;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
-    z-index: 1001; /* Ensuring correct stacking order */
-    border-left: 1px solid #999999;
+    z-index: 1001;
+    /* Ensuring correct stacking order */
+    border-left: 1px solid var(--border-color);
     border-top-left-radius: 1.5vh;
     border-bottom-left-radius: 1.5vh;
 }
@@ -591,8 +714,8 @@ nav ul li:hover {
 
 .clear-button,
 .logout-button {
-    background-color: #9f9f9f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
     border: none;
     border-radius: 2vh;
     padding: 0.5vh 1vw;
@@ -611,18 +734,18 @@ nav ul li:hover {
     align-items: center;
     margin-right: 3vw;
     /* Added space between buttons */
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 
 .clear-button:hover,
 .logout-button:hover {
-    background-color: #7f7f7f;
+    background-color: var(--button-hover-color);
 }
 
 #clearChat:hover,
 #saveChat:hover,
 .clear-button:hover {
-    background-color: #7f7f7f;
+    background-color: var(--button-hover-color);
 }
 
 
@@ -633,7 +756,7 @@ nav ul li:hover {
     list-style: none;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #646464;
+    background-color: var(--savedChats-background-color);
     padding: 0.5vw;
     border-radius: 1.5vh;
     box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
@@ -650,7 +773,7 @@ nav ul li:hover {
     padding-left: 0.1vw;
     padding-right: 1vw;
     overflow-y: auto;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
     padding-top: 2.5vh;
     border-radius: 1.5vh;
     box-shadow: 0px 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
@@ -662,28 +785,12 @@ nav ul li:hover {
 }
 
 #savedChatsList::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--scrollbar-color);
     border-radius: 0.5vh;
 }
 
 #savedChatsList::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.list-item-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-}
-
-.titleAndTrashContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    white-space: nowrap;
-    border-radius: 0.5vh;
-    padding: 0.5vh 1vw;
+    background: var(--scrollbar-hover-color);
 }
 
 .title,
@@ -697,13 +804,61 @@ nav ul li:hover {
     cursor: pointer;
     margin-right: 0.2vw;
     margin-left: 0.2vw;
-    border: 0.1vw solid #888;
+    border: 0.1vw solid var(--border-color);
     border-radius: 0.5vh;
 }
 
 .title:hover,
 .titleButton:hover {
-    background-color: #888;
+    background-color: var(--scrollbar-hover-color);
+}
+
+
+.title-wrapper,
+.actions-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.list-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titleAndTrashContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-color: var(--border-color);
+    border-radius: 1vh;
+    cursor: pointer;
+    margin-right: 0.2vw;
+    max-width: 80%;
+    /* Adjust this percentage as needed */
+}
+
+.actions-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.far,
+.fas {
+    cursor: pointer;
+    margin-left: 7px;
 }
 
 .fa-trash-alt {
@@ -717,4 +872,29 @@ nav ul li:hover {
     border: 0.1vw solid #888;
     border-radius: 0.5vh;
     padding: 0.2vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-content button {
+    margin: 10px;
 }

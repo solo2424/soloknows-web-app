@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/global.css" media="screen and (min-width: 1025px)">
     <link rel="stylesheet" type="text/css" href="/global.css"
         media="screen and (min-width: 601px) and (max-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="/global.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width: 600px)">
     <!-- Font awesome file path updated -->
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-6.4.0-web/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,90 +17,115 @@
 
     <nav>
         <ul>
-            <li id="userProfile"><a href="#"><img src="/images/userprofile.png" alt="Home"></a></li>
+            <li id="userProfile"><a href="#" class="icon"><i class="fas fa-user-circle"></i></a></li>
             <li id="systemMessages"><a href="#">Check this area for important information</a></li>
             <li id="sidebarToggleNav"><a href="#" class="icon"><i class="fas fa-th-list"></i></a></li>
         </ul>
     </nav>
 
 
-<!-- Login Popup -->
-<div id="login-popup" class="form-popup">
-    <form id="login-form" class="container">
-        <h1>Login</h1>
+    <!-- Login Popup -->
+    <div id="login-popup" class="form-popup">
+        <form id="login-form" class="container">
+            <h1>Login</h1>
 
-        <label for="login-email"><b>Email</b></label>
-        <input type="text" id="login-email" placeholder="Enter Email" name="email" required>
+            <label for="login-email"><b>Email</b></label>
+            <input type="text" id="login-email" placeholder="Enter Email" name="email" required>
 
-        <label for="login-password"><b>Password</b></label>
-        <input type="password" id="login-password" placeholder="Enter Password" name="psw" required>
+            <label for="login-password"><b>Password</b></label>
+            <input type="password" id="login-password" placeholder="Enter Password" name="psw" required>
 
-        <div class="button-wrapper">
-            <button type="submit" class="btn">Login</button>
-            <button type="button" id="goto-signup" class="btn">Sign Up</button>
-        </div>
-        <div class="or-separator">
-            <div class="line"></div>
-            <div class="or-box">Or</div>
-            <div class="line"></div>
-        </div>
-        <img src="/images/googleSignin.png" id="google-login-button" alt="Google Sign-In Button" class="google-button">
-    </form>
-</div>
-
-<!-- Sign Up Popup -->
-<div id="signup-popup" class="form-popup">
-    <form id="signup-form" class="container">
-        <h1>Sign Up</h1>
-
-        <label for="signup-email"><b>Email</b></label>
-        <input type="text" id="signup-email" placeholder="Enter Email" name="email" required>
-
-        <label for="signup-password"><b>Password</b></label>
-        <input type="password" id="signup-password" placeholder="Enter Password" name="psw" required>
-
-        <div class="button-wrapper">
-            <button type="submit" class="btn">Sign Up</button>
-            <button type="button" id="goto-login" class="btn">Back to Login</button>
-        </div>
-        <div class="or-separator">
-            <div class="line"></div>
-            <div class="or-box">Or</div>
-            <div class="line"></div>
-        </div>
-        <img src="/images/googleSignup.png" id="google-signup-button" alt="Google Sign-Up Button" class="google-button">
-    </form>
-</div>
-
-
-
-    <!-- Main Container -->
-    <div id="mainContainer">
-        <div id="greetingContainer">
-            <!-- Image file path updated -->
-            <img id="botAvatarGreeting" src="/images/ChatbotAvatar.png" alt="Chatbot Avatar">
-            <p id="greetingMessage">Hello, I'm SoLoBot! How can I assist you?</p>
-        </div>
-        <div id="chatAreaWrapper">
-            <div id="chatArea">
-                <!-- Your chat content here -->
+            <div class="button-wrapper">
+                <button type="submit" class="btn">Login</button>
+                <button type="button" id="goto-signup" class="btn">Sign Up</button>
             </div>
-        </div>
-        <div id="inputContainer">
-            <input type="text" id="inputText" placeholder="Type your message here...">
-            <button id="submitButton">Submit</button>
-        </div>
-        <div id="controlContainer">
-            <button id="clearChat">Clear Chat</button>
-            <select id="apiSelect">
-                <option value="OpenAI">OpenAI</option>
-                <option value="OpenSource">Open Source</option>
-            </select>
-            <button id="saveChat">Save Chat</button>
-        </div>
-        <p id="apiKeyDisplay"></p>
-        <p id="modelNameDisplay"></p>
+            <div class="or-separator">
+                <div class="line"></div>
+                <div class="or-box">Or</div>
+                <div class="line"></div>
+            </div>
+            <img src="/images/googleSignin.png" id="google-login-button" alt="Google Sign-In Button"
+                class="google-button">
+        </form>
     </div>
+
+    <!-- Sign Up Popup -->
+    <div id="signup-popup" class="form-popup">
+        <form id="signup-form" class="container">
+            <h1>Sign Up</h1>
+
+            <label for="signup-email"><b>Email</b></label>
+            <input type="text" id="signup-email" placeholder="Enter Email" name="email" required>
+
+            <label for="signup-password"><b>Password</b></label>
+            <input type="password" id="signup-password" placeholder="Enter Password" name="psw" required>
+
+            <div class="button-wrapper">
+                <button type="submit" class="btn">Sign Up</button>
+                <button type="button" id="goto-login" class="btn">Back to Login</button>
+            </div>
+            <div class="or-separator">
+                <div class="line"></div>
+                <div class="or-box">Or</div>
+                <div class="line"></div>
+            </div>
+            <img src="/images/googleSignup.png" id="google-signup-button" alt="Google Sign-Up Button"
+                class="google-button">
+        </form>
+    </div>
+
+
+<!-- Main Container -->
+<div id="mainContainer">
+    <!-- Greeting Container -->
+    <div id="greetingContainer">
+        <img id="botAvatarGreeting" src="/images/ChatbotAvatar.png" alt="Chatbot Avatar">
+        <p id="greetingMessage">Hello, I'm SoLoBot! How can I assist you?</p>
+    </div>
+    <!-- Chat Area Wrapper -->
+    <div id="chatAreaWrapper">
+        <div id="chatArea">
+            <!-- Assistant Message -->
+            <div class="message-container assistant-container">
+                <div class="avatar assistant-avatar"></div>
+                <div class="message assistant">Hello, I'm the assistant!</div>
+            </div>
+            <!-- User Message -->
+            <div class="message-container user-container">
+                <div class="message user">Hi, I'm the user!</div>
+                <div class="avatar user-avatar"></div>
+            </div>
+            <!-- Additional chat content can be added here -->
+        </div>
+    </div>
+
+    <!-- Input for user avatar upload (moved outside the chatArea) -->
+    <input type="file" id="userAvatarInput" accept="image/*" style="display: none;">
+    <!-- Input Container -->
+    <div id="inputContainer">
+        <input type="text" id="inputText" placeholder="Type your message here...">
+        <button id="submitButton">Submit</button>
+    </div>
+    <!-- Control Container -->
+    <div id="controlContainer">
+        <button id="clearChat">Clear Chat</button>
+        <select id="apiSelect">
+            <option value="OpenAI">OpenAI</option>
+            <option value="OpenSource">Open Source</option>
+        </select>
+        <button id="saveChat">Save Chat</button>
+    </div>
+    <p id="apiKeyDisplay"></p>
+    <p id="modelNameDisplay"></p>
+</div>
+
+
+
+
+
+
+
+
 
 
     <!-- Sidebar -->
@@ -125,6 +150,13 @@
     </div>
 
 
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <p>Do you want to save the chat before clearing it?</p>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
 
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -135,9 +167,13 @@
 
     <!-- Firebase Firestore -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
+    <!-- Add the Firebase Storage SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
 
     <!-- JavaScript file path updated -->
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>

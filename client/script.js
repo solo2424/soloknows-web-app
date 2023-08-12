@@ -1,10 +1,18 @@
+
+
+
 // Global Declarations
 let chatHistory;
 let savedChats;
 let apiKey;
 let modelName;
 let selectedApi;
-let userAvatar;
+let db; // Declare db here
+
+
+
+
+
 
 if (document.readyState === 'loading') {  // Loading hasn't finished yet
     document.addEventListener('DOMContentLoaded', initialize);
@@ -49,11 +57,16 @@ function initialize() {
     firebase.initializeApp(firebaseConfig);
     console.log('Firebase Initialized');
     const auth = firebase.auth();
-    const db = firebase.firestore();
+    db = firebase.firestore(); // Assign to the global db variable
     console.log('Initializing Firebase');
+
+
 
     // Initialize Google Provider
     const provider = new firebase.auth.GoogleAuthProvider();
+
+    // Initialize Storage
+    var storage = firebase.storage();
 
     // Get the HTML elements with the respective IDs
     const googleLoginButton = document.getElementById('google-login-button'); // The button to open the Google login
@@ -97,7 +110,7 @@ function initialize() {
     const gotoSignupButton = document.getElementById('goto-signup');
     const gotoLoginButton = document.getElementById('goto-login');
 
-    // ...
+
 
     // Check if user is already logged in
     firebase.auth().onAuthStateChanged(function (user) {
@@ -114,6 +127,7 @@ function initialize() {
             loginPopup.style.display = 'block';
         }
     });
+/////////////////////////////  SIDEBAR ////////////////////////////////////////////////////
 
     // Adjust the sidebar position when the window is resized
     window.addEventListener('resize', adjustSidebar);
@@ -133,7 +147,9 @@ function initialize() {
     sidebarToggle.addEventListener('click', toggleSidebar);
     sidebarToggleNav.addEventListener('click', toggleSidebar);
 
-    function toggleSidebar() {
+    function toggleSidebar(event) {
+        event.stopPropagation(); // Prevent the event from bubbling up
+
         var sidebar = document.getElementById('sidebar');
         var mainContainer = document.getElementById('mainContainer');
         var icon = document.querySelector('#sidebarToggle i');
@@ -144,26 +160,40 @@ function initialize() {
             sidebar.classList.add('open');
             mainContainer.classList.remove('main-closed');
             mainContainer.classList.add('main-open');
-            icon.classList.remove('fas', 'fa-th-list'); // Change to the correct classes
-            icon.classList.add('new-icon-class'); // Change to the correct class
-            iconNav.classList.remove('fas', 'fa-th-list'); // Change to the correct classes
-            iconNav.classList.add('new-icon-class'); // Change to the correct class
+            icon.classList.remove('fas', 'fa-th-list');
+            icon.classList.add('new-icon-class');
+            iconNav.classList.add('new-icon-class');
         } else {
             sidebar.classList.add('closed');
             sidebar.classList.remove('open');
             mainContainer.classList.remove('main-open');
             mainContainer.classList.add('main-closed');
-            icon.classList.remove('new-icon-class'); // Revert to the original classes
-            icon.classList.add('fas', 'fa-th-list'); // Revert to the original classes
-            iconNav.classList.remove('new-icon-class'); // Revert to the original classes
-            iconNav.classList.add('fas', 'fa-th-list'); // Revert to the original classes
+            icon.classList.remove('new-icon-class');
+            icon.classList.add('fas', 'fa-th-list');
+            iconNav.classList.remove('new-icon-class');
+            iconNav.classList.add('fas', 'fa-th-list');
         }
     }
 
+// This listener is to close the sidebar when clicking outside of it
+document.addEventListener('click', function (event) {
+    var sidebar = document.getElementById('sidebar');
+    var mainContainer = document.getElementById('mainContainer');
+    var saveButton = document.getElementById('saveChat'); // Save Chat button
+    var clearButton = document.getElementById('clearChat'); // Clear Chat button
+    var isClickInside = sidebar.contains(event.target) || saveButton.contains(event.target) || clearButton.contains(event.target);
+    var sidebarIsOpen = sidebar.classList.contains('open');
 
-    // Set the initial state of the sidebar
-    document.getElementById('sidebar').classList.add('closed');
+    if (!isClickInside && sidebarIsOpen) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+        mainContainer.classList.remove('main-open');
+        mainContainer.classList.add('main-closed');
+    }
+});
 
+// Set the initial state of the sidebar
+document.getElementById('sidebar').classList.add('closed');
 // Signup Button
 
     if (signupButton) {
@@ -366,24 +396,26 @@ function updateDisplay(selectedApi, apiKey, modelName) {
     }
 }
 
-function addMessageToChatHistory(message) {
-    console.log('Executing addMessageToChatHistory function');
-    chatHistory.push(message);
-    localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+async function loadChatHistoryFromFirestore() {
+    const chatsRef = db.collection("savedChats");
 
-    // Save the message to Firestore
-    addDoc(collection(db, 'chats'), {
-        message: message.content,
-        timestamp: message.timestamp,
-    })
-        .then((docRef) => {
-            console.log('Document written with ID: ', docRef.id);
-        })
-        .catch((error) => {
-            console.error('Error adding document: ', error);
-        });
+    // Retrieve the most recent saved chat
+    const querySnapshot = await chatsRef.orderBy("timestamp", "desc").limit(1).get();
 
+    // Check if there's a saved chat
+    if (!querySnapshot.empty) {
+        const savedChat = querySnapshot.docs[0].data();
+        chatHistory = savedChat.history;
+
+        // Update the chat display with the retrieved chat history
+        updateChatDisplay();
+    }
 }
+
+// Call the function to load the chat history when the page is loaded
+loadChatHistoryFromFirestore();
+
+
 
 
 function clearChatHistory() {
@@ -406,6 +438,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiKeyDisplay = document.getElementById('apiKeyDisplay');
     const modelNameDisplay = document.getElementById('modelNameDisplay');
     const clearAllChatsButton = document.getElementsByClassName('clear-button')[0];
+    const confirmModal = document.getElementById('confirmModal');
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    let userAvatar = localStorage.getItem('userAvatar') || ''; // Retrieve from localStorage
+
+
 
     window.onload = function () {
         console.log('Executing onload function');
@@ -420,6 +458,24 @@ document.addEventListener('DOMContentLoaded', () => {
         // Call updateSavedChatsList to display saved chats in the sidebar when the page loads
         updateSavedChatsList();
     };
+
+    function handleUserAvatarUpload(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const storageRef = firebase.storage().ref('avatars/' + file.name);
+            storageRef.put(file).then(snapshot => {
+                snapshot.ref.getDownloadURL().then(downloadURL => {
+                    userUpload = downloadURL;
+                    updateChatDisplay();
+
+                    // Save the download URL to Firestore
+                    const userRef = firebase.firestore().collection('users').doc('USER_ID');
+                    userRef.set({ avatarURL: downloadURL });
+                });
+            });
+        }
+    }
+
 
     // Load the stored apiKey, modelName, chatHistory, savedChats, and selectedApi from localStorage
     console.log('Loading stored data from localStorage');
@@ -543,16 +599,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+
+
     if (clearButton) {
         clearButton.addEventListener('click', () => {
-            saveChatHistory();
-            chatHistory = [];
-            updateChatDisplay();
-
-            // Save chatHistory to localStorage
-            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+            confirmModal.style.display = 'block'; // Show the modal
         });
     }
+
+    if (yesButton) {
+        yesButton.addEventListener('click', () => {
+            saveChatHistory().then(() => {
+                chatHistory = [];
+                updateChatDisplay();
+                localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+            });
+            confirmModal.style.display = 'none'; // Hide the modal
+        });
+    }
+
+    if (noButton) {
+        noButton.addEventListener('click', () => {
+            chatHistory = [];
+            updateChatDisplay();
+            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+            confirmModal.style.display = 'none'; // Hide the modal
+        });
+    }
+
+
+
 
     if (clearAllChatsButton) {
         console.log('Setting up event listener for clearAllChatsButton');
@@ -570,23 +647,93 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/////////////////////////////////////////// UserAvatar Upload /////////////////////////////////////////////////////
+
+// Variable to hold the user uploaded image
+let userUpload = '';
+
+// Function to handle user avatar upload
+function handleUserAvatarUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const storageRef = firebase.storage().ref('avatars/' + file.name);
+        storageRef.put(file).then(snapshot => {
+            snapshot.ref.getDownloadURL().then(downloadURL => {
+                userUpload = downloadURL;
+                updateChatDisplay();
+
+                // Get the logged-in user's ID
+                if (firebase.auth().currentUser) {
+                    const userId = firebase.auth().currentUser.uid;
+
+                    // Save the download URL to Firestore using the user's ID
+                    const userRef = firebase.firestore().collection('users').doc(userId);
+                    userRef.set({ avatarURL: downloadURL });
+                } else {
+                    console.log("User not logged in during upload");
+                }
+            });
+        });
+    }
+}
+
+// Function to retrieve and display the user avatar
+function loadUserAvatar() {
+    if (firebase.auth().currentUser) {
+        const userId = firebase.auth().currentUser.uid;
+        console.log("User ID:", userId); // Debugging log
+
+        const userRef = firebase.firestore().collection('users').doc(userId);
+        userRef.get().then(doc => {
+            if (doc.exists) {
+                userUpload = doc.data().avatarURL;
+                // Preload the image
+                const img = new Image();
+                img.src = userUpload;
+                img.onload = () => {
+                    console.log("Avatar preloaded");
+                    updateChatDisplay();
+                };
+            } else {
+                console.log("No such document!"); // Debugging log
+            }
+        }).catch(error => {
+            console.log("Error getting document:", error); // Debugging log
+        });
+    } else {
+        console.log("User not logged in during load");
+    }
+}
+
+
+// Using Firebase's authentication state observer to call loadUserAvatar once the user's login state is known
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        loadUserAvatar();
+    } else {
+        console.log("User not logged in");
+    }
+});
+
+
+// Add event listener for user avatar file input
+document.getElementById('userAvatarInput').addEventListener('change', handleUserAvatarUpload);
+
 // 4. Chat Display Functions
 function updateChatDisplay() {
-    console.log('Executing updateChatDisplay function');
-    localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
-
+    // ...
     chatArea.innerHTML = chatHistory.map(msg => {
         let timestamp = new Date(msg.timestamp).toLocaleString();
         return `
-        <div class="message-wrapper ${msg.role === 'user' ? 'user-wrapper' : 'bot-wrapper'}">
-            <img class="avatar ${msg.role === 'user' ? 'avatar-user' : 'avatar-bot'}" src="images/${msg.role === 'user' ? 'userAvatar1' : 'ChatbotAvatar'}.png">
-            <div class="message-container ${msg.role === 'user' ? 'message-container-user' : 'message-container-bot'}">
-                <div class="message ${msg.role === 'user' ? 'message-user' : 'message-bot'}">${msg.content}</div>
-                <small class="timestamp">${timestamp}</small>
-            </div>
-        </div>`;
+    <div class="message-wrapper ${msg.role === 'user' ? 'user-wrapper' : 'bot-wrapper'}">
+        <!-- Add click listener to the user avatar icon -->
+        ${msg.role === 'user' ? (userUpload ? `<img class="avatar-user-icon" src="${userUpload}" onclick="document.getElementById('userAvatarInput').click()">` : `<i class="fas fa-user-circle avatar-user-icon" onclick="document.getElementById('userAvatarInput').click()"></i>`) : `<img class="avatar avatar-bot" src="images/ChatbotAvatar.png">`}
+        <div class="message-container ${msg.role === 'user' ? 'message-container-user' : 'message-container-bot'}">
+            <div class="message ${msg.role === 'user' ? 'message-user' : 'message-bot'}">${msg.content}</div>
+            <small class="timestamp">${timestamp}</small>
+        </div>
+    </div>`;
     }).join('');
-
     const latestMessage = chatArea.lastChild;
     if (latestMessage) {
         latestMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -594,75 +741,71 @@ function updateChatDisplay() {
 }
 
 
+
+
+///////////////////////////////////// Update Saved Chats List ////////////////////////////////////////////////
+
 async function updateSavedChatsList() {
     console.log('Executing updateSavedChatsList function');
 
-    // Fetch saved chats from Firestore
-
-
-    // Fetch saved chats from Firestore
-    const querySnapshot = await firebase.firestore().collection('savedChats').get();
-    let savedChats = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-
-
-    savedChats.sort((a, b) => b.timestamp - a.timestamp);
-
-    const chatsByDay = savedChats.reduce((groups, chat) => {
-        const chatDate = getSeparatorText(new Date(chat.timestamp));
-        const groupKey = chatDate;
-        if (!groups[groupKey]) {
-            groups[groupKey] = [];
-        }
-        groups[groupKey].push(chat);
-        return groups;
-    }, {});
+    const chatsRef = db.collection("savedChats");
 
     savedChatsList.innerHTML = '';
-    Object.entries(chatsByDay).forEach(([day, chats]) => {
-        const dayListItem = document.createElement('li');
 
-        const separator = document.createElement('span');
-        separator.textContent = day;
-        separator.style.fontWeight = 'bold';
-        dayListItem.appendChild(separator);
+    chatsRef.orderBy("timestamp", "desc").get()
+        .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                const chat = doc.data();
+                const listItem = document.createElement('li');
+                const listItemWrapper = document.createElement('div');
+                listItemWrapper.className = 'list-item-wrapper';
 
-        chats.forEach((chat, index) => {
-            const listItem = document.createElement('li');
-            const listItemWrapper = document.createElement('div');
-            listItemWrapper.className = 'list-item-wrapper';
+                const titleAndTrashContainer = document.createElement('div');
+                titleAndTrashContainer.className = 'titleAndTrashContainer';
 
-            const title = document.createElement('span');
-            title.className = 'title';
-            title.textContent = chat.title;
-            title.title = chat.title;
+                const title = document.createElement('span');
+                title.className = 'title';
+                title.textContent = chat.title.trim();
+                title.title = chat.title.trim();
 
-            const deleteButton = document.createElement('i');
-            deleteButton.className = 'far fa-trash-alt';
-            deleteButton.addEventListener('click', async (event) => {
-                event.stopPropagation();
-                // Remove the chat from Firestore
-                await deleteDoc(doc(db, 'savedChats', chat.id));
-                // Update the list of saved chats in the UI
-                updateSavedChatsList();
+                const deleteButton = document.createElement('i');
+                deleteButton.className = 'far fa-trash-alt';
+                deleteButton.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    // Deleting chat from Firestore
+                    doc.ref.delete()
+                        .then(() => updateSavedChatsList())
+                        .catch((error) => console.error("Error deleting chat: ", error));
+                });
+
+                const downloadButton = document.createElement('i');
+                downloadButton.className = 'fas fa-download';
+                downloadButton.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    downloadChatAsHTML(chat);
+                });
+
+                titleAndTrashContainer.appendChild(title);
+                titleAndTrashContainer.appendChild(deleteButton);
+                titleAndTrashContainer.appendChild(downloadButton);
+
+                listItemWrapper.appendChild(titleAndTrashContainer);
+
+                listItem.appendChild(listItemWrapper);
+
+                listItem.addEventListener('click', () => {
+                    chatHistory = chat.history;
+                    updateChatDisplay();
+                });
+
+                savedChatsList.appendChild(listItem);
             });
-
-            listItemWrapper.appendChild(title);
-            listItemWrapper.appendChild(deleteButton);
-            listItem.appendChild(listItemWrapper);
-
-            listItem.addEventListener('click', () => {
-                chatHistory = chat.history;
-                updateChatDisplay();
-
-                // Save chatHistory to Firestore
-                setDoc(doc(db, 'chatHistory', 'userChatHistory'), chatHistory);
-            });
-            dayListItem.appendChild(listItem);
+        })
+        .catch((error) => {
+            console.error("Error fetching chats: ", error);
         });
-
-        savedChatsList.appendChild(dayListItem);
-    });
 }
+
 
 
 
@@ -670,6 +813,18 @@ async function updateSavedChatsList() {
 
 async function saveChatHistory() {
     console.log('Executing saveChatHistory function');
+
+    var sidebar = document.getElementById('sidebar');
+    var mainContainer = document.getElementById('mainContainer');
+    var isSidebarOpen = sidebar.classList.contains('open');
+
+    // Ensure that the sidebar is open or stays open
+    if (!isSidebarOpen) {
+        sidebar.classList.remove('closed');
+        sidebar.classList.add('open');
+        mainContainer.classList.remove('main-closed');
+        mainContainer.classList.add('main-open');
+    }
 
     const titleRequestMessage = 'Please generate a conversation title based on the context that best describes the question being asked. Please keep the title short and to the point and format it as "conversationTitle: [Title]".';
     chatHistory.push({
@@ -679,7 +834,6 @@ async function saveChatHistory() {
         isTitleRequest: true
     });
 
-    // Send a 'generate' request to the AI model
     try {
         let response = await fetch('/api', {
             method: 'POST',
@@ -702,23 +856,18 @@ async function saveChatHistory() {
                 let conversationTitle = data.result.slice(titleStartIndex + 'conversationTitle: '.length);
                 conversationTitle = conversationTitle.replace(/[\\/:*?"<>|]/g, " ").trim();
 
-                // Remove the title request from the chat history and update the chat display
                 chatHistory.pop();
                 updateChatDisplay();
 
-                // Prepare the chat history to be saved
                 const savedChat = {
                     title: conversationTitle,
                     history: chatHistory,
-                    timestamp: Date.now() // This creates a timestamp representing the current time
+                    timestamp: Date.now()
                 };
 
-                // Save the chat history to local storage
-                localStorage.setItem('savedChat', JSON.stringify(savedChat));
+                saveChatToFirestore(savedChat);
 
                 console.log('Chat saved successfully');
-
-                // Update the list of saved chats in the UI
                 updateSavedChatsList();
             }
         } else {
@@ -730,3 +879,180 @@ async function saveChatHistory() {
 }
 
 
+function saveChatToFirestore(savedChat) {
+    const chatsRef = db.collection("savedChats");
+
+    chatsRef.add(savedChat)
+        .then((docRef) => {
+            console.log("Chat saved with ID: ", docRef.id);
+        })
+        .catch((error) => {
+            console.error("Error saving chat: ", error);
+        });
+}
+
+
+//// Convert image to Base64 //////////////////////
+// Convert image to Base64
+function encodeImageFileAsBase64(imagePath) {
+    return new Promise((resolve, reject) => {
+        let image = new Image();
+        // Set cross-origin attribute to handle cross-origin images
+        image.crossOrigin = 'Anonymous';
+        image.src = imagePath;
+        image.onload = () => {
+            let canvas = document.createElement('canvas');
+            canvas.width = image.width;
+            canvas.height = image.height;
+            let ctx = canvas.getContext('2d');
+            ctx.drawImage(image, 0, 0, image.width, image.height);
+            let dataURL = canvas.toDataURL('image/png');
+            resolve(dataURL);
+        };
+        image.onerror = reject;
+    });
+}
+
+
+
+
+
+//// Download Chat to HTML ////////////////////
+
+function getCSSVariables() {
+    // Get the root style (":root") to access CSS variables
+    const rootStyle = getComputedStyle(document.documentElement);
+    let variables = '';
+
+    // Iterate through the properties to find variables (those starting with "--")
+    for (const prop of rootStyle) {
+        if (prop.startsWith('--')) {
+            variables += `${prop}: ${rootStyle.getPropertyValue(prop)};`;
+        }
+    }
+
+    return variables;
+}
+
+
+
+// Extract CSS variables
+const cssVariables = getCSSVariables();
+
+function downloadChatAsHTML() {
+    // Get the user avatar from the displayed image in the chat area
+    const userAvatarElement = document.querySelector('.avatar-user-icon');
+    const userAvatarSrc = userAvatarElement ? userAvatarElement.src : '';
+
+    // Use the correct path for the bot avatar
+    const botAvatarSrc = 'images/ChatbotAvatar.png';
+
+    Promise.all([
+        userAvatarSrc, // No need to encode as Base64, as it's already displayed on the page
+        encodeImageFileAsBase64(botAvatarSrc)
+    ])
+        .then(([userAvatar, botAvatar]) => {
+            // Create the HTML content
+            const htmlContent = `
+        <!DOCTYPE html>
+     <html>
+    <head>
+        <style>
+            /* Global styling for the body */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                padding: 10px;
+            }
+
+            /* Styling for the container that holds each message */
+            .message-container {
+                display: flex;
+                width: 60%;
+                margin-bottom: 10px;
+            }
+
+            /* Styling for the assistant's message container, aligning to the left */
+            .assistant-container {
+                align-items: flex-start;
+                flex-direction: row; /* Avatar on the left */
+            }
+
+            /* Styling for the user's message container, aligning to the right */
+            .user-container {
+                align-items: flex-end;
+                flex-direction: row-reverse; /* Avatar on the right */
+            }
+
+            /* Container for the avatar and message */
+            .message-avatar-container {
+                display: flex;
+            }
+
+            /* General styling for the message bubble */
+            .message {
+                padding: 10px;
+                border-radius: 15px;
+                line-height: 1.5;
+                position: relative;
+                margin: 5px;
+            }
+
+            /* Styling for the assistant's message bubble */
+            .bot {
+                background-color: #e3f2fd;
+                color: #000000;
+                border: 1px solid #012d4b;
+            }
+
+            /* Styling for the user's message bubble */
+            .user {
+                background-color: #b3e5fc;
+                color: #000000;
+                border: 1px solid #4b4b4b;
+            }
+
+            /* Styling for the avatar image */
+            .avatar {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                margin: 5px;
+                border: 2px solid #4b4b4b;
+            }
+        </style>
+    </head>
+            <body>
+                <div class="chat-container">
+                    ${chatHistory.map(msg => {
+                const avatar = msg.role === 'user' ? userAvatar : botAvatar;
+                const timestamp = new Date(msg.timestamp).toLocaleString();
+                const timestampWrapper = msg.role === 'user' ? 'user-timestamp-wrapper' : 'bot-timestamp-wrapper';
+                return `
+                        <div class="message-container ${msg.role}-container">
+                            <div class="message-avatar-container">
+                                <img class="avatar" src="${avatar}">
+                                <div class="message-wrapper">
+                                    <div class="${timestampWrapper}"><div class="timestamp">${timestamp}</div></div>
+                                    <div class="message ${msg.role}">${msg.content}</div>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+            }).join('')}
+                </div>
+            </body>
+        </html>`;
+            // Create a blob from the HTML content and download it
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Chat History.html'; // You can adjust the download file name here
+            link.click();
+            URL.revokeObjectURL(url);
+        })
+        .catch(error => {
+            console.error('Error encoding images:', error);
+        });
+}
