@@ -1,0 +1,336 @@
+
+/* -------------------- 6. Chat Area Styles for Mobile --------------------------------------- */
+
+/* Greeting Section */
+#greetingContainer {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    overflow: hidden;
+    /* Hide overflowing content */
+
+}
+
+#botAvatarGreeting {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#greetingMessage {
+    font-size: 10px;
+    /* Slightly increased font size for readability */
+    color: #333;
+}
+
+/* Chat Area Section */
+#chatAreaWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: width 0.42s ease-in-out;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Match greeting container margin */
+    margin: 0;
+    /* Set margin to 0 to eliminate any default margins */
+    padding: 0;
+    /* Set padding to 0 to eliminate any default padding */
+    left: 0;
+    top: 0%;
+    bottom: 0%;
+    overflow-x: hidden;
+}
+
+#chatArea {
+    display: fixed;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 72%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    border: none;
+    border-radius: 1.5%;
+    overflow-y: auto;
+    background-color: var(--messages-background-color);
+    box-shadow: 0% 0.3% 0.15% rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0.1%;
+    border-color: var(--border-color);
+    bottom: 0%;
+    top: 15%;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+#chatArea::-webkit-scrollbar {
+    width: 2%;
+}
+
+#chatArea::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+    border-radius: 0.5%;
+}
+
+#chatArea::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-hover-color);
+}
+
+/* Message Section */
+.message {
+    max-width: 90%;
+    min-width: 10%;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    /* Adjusted font size for readability */
+    line-height: 1.5;
+}
+
+.message-bot {
+    background-color: var(--messages-bot-bubble-color);
+    color: var(--messages-bot-text-color);
+    padding: 5%;
+    border-top-left-radius: 0%; 
+    
+}
+
+.message-user {
+    background-color: var(--messages-user-bubble-color);
+    color: var(--messages-user-text-color);
+    padding: 5%;
+    border-top-right-radius: 0%;
+}
+
+/* Message Wrapper */
+.message-wrapper {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+.bot-wrapper {
+    flex-direction: row;
+    padding-left: 2%;
+}
+
+.user-wrapper {
+    flex-direction: row-reverse;
+    padding-right: 2%;
+}
+
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.message-container-bot {
+    align-items: flex-start;
+}
+
+.message-container-user {
+    align-items: flex-end;
+}
+
+
+/* Avatars */
+
+/* Ensuring the avatar and delete button are vertically stacked */
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Avatars */
+.avatar-bot,
+.avatar-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--border-color);
+    object-fit: cover;
+    cursor: pointer;
+    color: #4b4b4b;
+    font-size: 4%;
+}
+
+
+
+#userAvatarLabel {
+    cursor: pointer;
+}
+
+/* Ensuring the avatar and delete button are vertically stacked */
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centering the delete button below the avatar */
+    position: relative;
+}
+
+
+.avatar-container img,
+.avatar-container i {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+/* Controls User Avatar Position */
+.fas.fa-user-circle.avatar-user-icon {
+    font-size: 36px;
+    /* Slightly smaller icon size */
+
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    /* For smooth circle */
+
+    background: #fff;
+    color: #555;
+
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    /* Center icon in circle */
+}
+.timestamp {
+    font-size: 15px;
+    padding-top: 5px;
+    color: var(--timestamp-text-color);
+}
+
+/* Styling for delete-message-btn */
+.delete-message-btn {
+    font-size: 15px;
+    cursor: pointer;
+    color: #6b6b6b;
+    transition: 0.3s ease;
+}
+
+.bot-wrapper .timestamp-container {
+    display: flex;
+    justify-content: flex-start;
+    /* This will align the items to the left */
+    position: relative;
+    /* This is necessary to position the delete button */
+    align-items: center;
+    /* This will vertically center the items */
+    width: 100%;
+}
+
+.bot-wrapper .delete-message-btn {
+    order: -1;
+    /* This will make the delete button appear before the timestamp */
+    text-align: center;
+    /* This will make sure the 'x' is centered within its space */
+    margin-left: -2px;
+    margin-top: 5px;
+}
+
+.bot-wrapper .timestamp {
+    margin-left: 10px;
+    /* Adjust this value based on how much you want to shift the timestamp to the right */
+}
+
+
+/* User-specific Timestamp Container Adjustments for User */
+.user-wrapper .timestamp-container {
+    display: flex;
+    width: 100%;
+    /* Ensuring it takes up full available width */
+    justify-content: flex-end;
+    /* Aligning the contents (timestamp + delete button) to the right */
+    position: relative;
+    /* This is necessary to position the delete button */
+}
+
+/* User-specific Delete Button Adjustments */
+.user-wrapper .delete-message-btn {
+    position: static;
+    transform: none;
+    margin-left: 7px;
+    margin-top: 8px;
+    /* Space between timestamp and delete button */
+}
+
+.delete-message-btn:hover {
+    color: #ff6b57;
+}
+
+pre {
+    background-color: #0a0a0a;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    border-radius: 10px;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    position: relative;
+}
+
+code {
+
+    border-radius: 3px;
+    color: #f36d33;
+    font-family: monospace;
+    padding: 0 .5em;
+}
+
+.code-container {
+    position: relative;
+}
+
+.copy-code-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.copy-code-btn:hover {
+    opacity: 1;
+}
+
+.language-name {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 10;
+}

@@ -1,0 +1,165 @@
+
+/* =================== 5. User Menu Styles =================== */
+
+
+
+#user-menu {
+    position: fixed;
+    top: 5vh;
+    left: -100%;
+    /* This should be slightly more than the width to ensure it's entirely off the screen */
+    width: 14.8%;
+    /* Similar to the sidebar, adjusting width based on the viewport */
+    height: 95vh;
+    background-color: var(--usermenu-background-color);
+    transition: left 0.3s;
+    z-index: 1001;
+    box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-right: 1px solid var(--border-color);
+    border-top-right-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    /* Adjusted for the left side */
+}
+
+#user-menu.open {
+    left: 0;
+    /* Slide in when opened */
+}
+
+#user-menu.closed {
+    left: -100%
+}
+.user-info {
+    background-color: var(--user-info-bgcolor);
+    /* This is a light grey color. Adjust to your preference. */
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* Add some padding for spacing. Adjust to your preference. */
+    border-top-right-radius: 1.5vh;
+    position: relative;
+    /* To position the pseudo-element relative to this container */
+}
+
+.user-info::before {
+    content: "";
+    display: block;
+    /* Make it a block-level element */
+    width: 100%;
+    /* Take the full width of the parent */
+    height: 100%;
+    /* Take the full height of the parent */
+    background-color: inherit;
+    /* Inherit the background color from the parent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Place it behind the content */
+    border-top-right-radius: inherit;
+    /* Inherit the border radius from the parent */
+}
+
+/* User Menu Content Styles */
+.user-info p#email {
+    white-space: nowrap;
+    /* Prevents the text from wrapping onto the next line */
+    overflow: hidden;
+    /* Hides the overflow */
+    text-overflow: ellipsis;
+    /* Displays an ellipsis when the text overflows */
+    max-width: 95%;
+    /* Sets a maximum width for the text; adjust if necessary */
+}
+
+#apiSelect {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: 0.5%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3%;
+    width: 90%;
+    /* This width setting will cause the button to occupy 90% of the parent container's width */
+    text-align: center;
+    /* This centers the text inside the button */
+    display: flex;
+    /* This, combined with the next two properties, will center the content of the button */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    margin: auto;
+    /* This will push the button to the bottom of its container if the container is also a flex container */
+    margin-top: 4%;
+
+}
+
+/* API/Model Selection */
+.modal {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with opacity */
+    z-index: 9999;
+    /* Ensures it appears above all other elements */
+}
+
+/* API Selection */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 300px;
+    /* You can adjust this */
+}
+
+
+.modal-content button {
+    margin: 10px;
+}
+
+#settings-button {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3%;
+    width: 90%;
+    /* Adjusted the width to make the buttons smaller */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4%;
+}
+

@@ -1,0 +1,178 @@
+
+/* -------------------- 10. Control Area Styles for Mobile -------------------------------------- */
+
+#controlContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* Keeps child elements pushed to the edges */
+    align-items: center;
+    width: 100%;
+    margin-left: 1%;
+    bottom: 1.5%;
+}
+
+#newChatButton {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 60px;
+    padding: 1%;
+    cursor: pointer;
+    outline: none;
+    font-size: 100%;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    margin: 0 0 0 1%;
+    /* Adjusted left margin to align with the start of the inputText box */
+}
+
+
+/* Read Aloud Toggle Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-right: 3%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    z-index: 1;
+}
+
+.slider:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.switch input::-moz-focus-inner,
+.slider::-moz-focus-inner,
+.switch::-moz-focus-inner {
+    border: 0;
+}
+
+.switch input:focus::-webkit-focus-ring-color,
+.slider:focus::-webkit-focus-ring-color,
+.switch:focus::-webkit-focus-ring-color {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "\f6a9";
+    /* Unicode for the volume-up icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    height: 26px;
+    width: 24px;
+    left: 3px;
+    /* Adjusted left padding */
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 50%;
+}
+
+input:checked+.slider:before {
+    content: "\f028";
+    /* Unicode for the volume-mute icon */
+    transform: translateX(50px);
+    /* Adjusted translation value */
+}
+input:checked+.slider {
+    background-color: var(--primary-color);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+input:checked+.slider:before {
+    transform: translateX(49px);
+    /* Adjusted for smaller screens */
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.switch input:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.switch input:active,
+.switch input:hover {
+    outline: none;
+}
+
+/* 9. API Area Styles */
+
+
+#modelNameDisplay,
+#apiKeyDisplay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    width: 100%;
+    color: var(--text-dark-color);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+
+    #modelNameDisplay,
+    #apiKeyDisplay {
+        font-size: 15px;
+        /* Slightly increased font size for very small screens */
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+
+    #modelNameDisplay,
+    #apiKeyDisplay {
+        font-size: 15px;
+        /* Adjusted font size for medium-sized screens */
+    }
+}

@@ -1,0 +1,79 @@
+
+/* -------------------- 9. Input Area Styles for Mobile --------------------------------------- */
+
+#inputContainer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0%;
+    bottom: 7.5%;
+}
+
+#inputText {
+    width: 75%;
+    height: 30px;
+    border: 20px solid var(--input-border-color);
+    /* Assuming this variable is defined for input border */
+    border-radius: 15px;
+    padding: 1% 1%;
+    outline: none;
+    font-size: 15px;
+    /* Slightly increased font size for better readability */
+    background-color: #fdfdfd;
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+#inputText::placeholder {
+    font-style: italic;
+    color: var(--placeholder-text-color);
+    /* Assuming this variable is defined for placeholder text */
+}
+
+#submitButton {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 20px;
+    padding: 1% 1%;
+    /* Adjusted as needed */
+    margin-left: 1%;
+    cursor: pointer;
+    outline: none;
+    font-size: 100%;
+    /* Adjusted for better readability */
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    margin-right: 2%;
+    display: flex;
+    /* Added for flexbox */
+    justify-content: center;
+    /* Center text horizontally */
+    align-items: center;
+    /* Center text vertically */
+}
+
+#submitButton:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+    /* Added subtle scaling effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    #inputText {
+        width: 72%;
+    }
+
+    #submitButton {
+        width: 20%;
+    }
+}
+
+@media (min-width: 601px) {
+    /* Adjustments for larger mobile screens can be added here */
+}

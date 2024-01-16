@@ -1,0 +1,147 @@
+
+
+
+/* =================== 5. User Menu Styles for Mobile =================== */
+
+
+/* User Menu - Initial State (hidden off the screen to the left) */
+#user-menu {
+    position: fixed;
+    top: 5%;
+    left: -100%;
+    width: 70%;
+    /* Adjusted to take up 70% of screen width when opened */
+    height: 95%;
+    background-color: var(--usermenu-background-color);
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+    box-shadow: 0px 0.3vh 1.5vh rgba(0, 0, 0, 0.1);
+    padding: 10px 15px 10px 15px;
+    border-right: 1px solid var(--border-color);
+    border-top-right-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+}
+
+/* User Menu - Open State */
+#user-menu.open {
+    left: 0;
+    /* Move to the left edge of the screen when opened */
+}
+
+/* User Menu - Closed State */
+#user-menu.closed {
+    left: -100%;
+    /* Move it off the screen to the left when closed */
+}
+
+/* User Info Section */
+
+.user-info p {
+    margin: 1vh 0;
+    /* Adjusted margin for spacing */
+}
+
+.user-info {
+    background-color: var(--user-info-bgcolor);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* Maintain inner padding for the content */
+    border-top-right-radius: 1.5vh;
+    position: relative;
+}
+
+.user-info::before {
+    content: "";
+    display: block;
+    width: calc(100% + 30px);
+    /* Extend width to cover the padding of the parent */
+    height: calc(100% + 15px);
+    /* Extend height to cover the padding of the parent */
+    background-color: inherit;
+    position: absolute;
+    top: -10px;
+    /* Shift it up to cover the padding of the parent */
+    left: -15px;
+    /* Shift it left to cover the padding of the parent */
+    z-index: -1;
+    border-top-right-radius: inherit;
+}
+
+#settings-button {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: .5% 1%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5% rgba(0, 0, 0, 0.1);
+    font-size: 100%;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3%;
+    width: 100%;
+    /* Adjusted the width to make the buttons smaller */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--sidebar-background-color);
+    padding: 2vh 2vw;
+    /* Adjusted padding for better touch experience */
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.modal-content button {
+    margin: 1vh;
+    padding: 1vh 2vw;
+    /* Adjusted padding for touch */
+}
+
+#user-icon {
+    width: 8vw;
+    height: 8vw;
+    border: 0.2rem solid var(--border-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 6vw;
+    line-height: 6.7vw;
+    background: var(--border-color);
+    color: #555;
+    position: relative;
+    left: -20%;
+    cursor: pointer;
+}
+
+i.fa-th-list {
+    font-size: 5vw !important;
+    /* Other styles */
+}
+
+
+#apiSelect {
+    width: 100%;
+    margin: 1vh 0;
+    /* Adjusted margin for spacing */
+}

@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #1ca9e6;
+    /* Cyan Process */
+    --secondary-color: #82cffa;
+    /* Sky Blue */
+    --tertiary-color: #e5feff;
+    /* Anti-Flash White */
+    --text-light-color: #000000;
+    --text-dark-color: #ffffff;
+    --background-color: #e5feff;
+    /* Anti-Flash White */
+    --border-color: #aee4ff;
+    /* Baby Blue */
+    --nav-background-color: #1ca9e6;
+    /* Cyan Process */
+    --sidebar-background-color: #e5feff;
+    /* Anti-Flash White */
+    --savedChats-background-color: #82cffa;
+    /* Sky Blue */
+    --navHover-background-color: #82cffa;
+    /* Sky Blue */
+    --messages-background-color: #e5feff;
+    /* Anti-Flash White */
+    --messages-bot-bubble-color: #82cffa;
+    /* Sky Blue */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #1ca9e6;
+    /* Cyan Process */
+    --messages-user-text-color: #ffffff;
+    --timestamp-text-color: #0d7377;
+    /* Oriental Blue  */
+    --scrollbar-color: #aee4ff;
+    /* Baby Blue */
+    --scrollbar-hover-color: #82cffa;
+    /* Sky Blue */
+    --button-hover-color: #82cffa;
+    /* Sky Blue */
+    --user-info-bgcolor: #82cffa;
+    /* Sky Blue */
+    --usermenu-background-color: #ffffff;
+}

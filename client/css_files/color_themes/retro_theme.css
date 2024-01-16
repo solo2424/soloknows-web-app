@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #ff6347;
+    /* Tomato */
+    --secondary-color: #ff7f50;
+    /* Coral */
+    --tertiary-color: #ff8c00;
+    /* Dark Orange */
+    --text-light-color: #ffffff;
+    --text-dark-color: #000000;
+    --background-color: #fff9f5;
+    /* Antique White */
+    --border-color: #ffd699;
+    /* Papaya Whip */
+    --nav-background-color: #ff6347;
+    /* Tomato */
+    --sidebar-background-color: #fff0f3;
+    /* Lavender Blush */
+    --savedChats-background-color: #ff7f50;
+    /* Coral */
+    --navHover-background-color: #ff7f50;
+    /* Coral */
+    --messages-background-color: #fff0f3;
+    /* Lavender Blush */
+    --messages-bot-bubble-color: #ff7f50;
+    /* Coral */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #ff6347;
+    /* Tomato */
+    --messages-user-text-color: #000000;
+    --timestamp-text-color: #a64d79;
+    /* Pink Purple */
+    --scrollbar-color: #ffd699;
+    /* Papaya Whip */
+    --scrollbar-hover-color: #ffab91;
+    /* Peach Puff */
+    --button-hover-color: #ff6347;
+    /* Tomato */
+    --user-info-bgcolor: #ff7f50;
+    /* Coral */
+    --usermenu-background-color: #ffffff;
+}

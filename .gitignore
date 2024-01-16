@@ -1,3 +1,5 @@
 node_modules/
 Open AI API Key.txt
 .aider*
+server.log
+/server/server.log

@@ -1,0 +1,160 @@
+INFO:root:Initializing the processor and model...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+INFO:root:Using device: cuda
+INFO:root:Starting the server...
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initializing the processor and model...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+INFO:root:Using device: cuda
+INFO:root:Starting the server...
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-693-516
+INFO:root:Server stopped.
+INFO:root:Server stopped.
+INFO:root:Initializing the processor and model...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+INFO:root:Using device: cuda
+INFO:root:Starting the server...
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:root:Initializing the processor and model...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+INFO:root:Using device: cuda
+INFO:root:Starting the server...
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-693-516
+2023-08-13 11:50:02,633: Initializing the processor and model...
+2023-08-13 11:50:02,637: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 11:50:03,165: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 11:50:03,224: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:50:03,301: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 11:50:03,359: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:50:03,511: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-13 11:50:16,753: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+2023-08-13 11:50:35,721: Using device: cuda
+2023-08-13 11:50:35,722: Starting the server...
+2023-08-13 11:50:35,735: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 11:50:35,735: [33mPress CTRL+C to quit[0m
+2023-08-13 11:50:35,743:  * Restarting with watchdog (windowsapi)
+2023-08-13 11:50:40,372: Initializing the processor and model...
+2023-08-13 11:50:40,375: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 11:50:40,876: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 11:50:40,930: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:50:40,998: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 11:50:41,053: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:50:41,190: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-13 11:51:01,973: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+2023-08-13 11:51:17,428: Using device: cuda
+2023-08-13 11:51:17,431: Starting the server...
+2023-08-13 11:51:17,444:  * Debugger is active!
+2023-08-13 11:51:17,451:  * Debugger PIN: 101-693-516
+2023-08-13 11:52:28,392:  * Detected change in 'C:\\Users\\jerem\\anaconda3\\envs\\soloknows\\Scripts\\pip-script.py', reloading
+2023-08-13 11:52:29,544:  * Restarting with watchdog (windowsapi)
+2023-08-13 11:52:34,212: Initializing the processor and model...
+2023-08-13 11:52:34,215: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 11:52:34,724: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 11:52:34,777: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:52:34,845: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 11:52:34,904: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 11:52:35,107: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-13 11:52:48,525: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+2023-08-13 11:53:04,817: Using device: cuda
+2023-08-13 11:53:04,818: Starting the server...
+2023-08-13 11:53:04,828:  * Debugger is active!
+2023-08-13 11:53:04,833:  * Debugger PIN: 101-693-516
+2023-08-13 11:53:10,704: Received request for text-to-speech...
+2023-08-13 11:53:10,709: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 11:53:11,193: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_semantic_prompt.npy HTTP/1.1" 302 0
+2023-08-13 11:53:11,255: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_coarse_prompt.npy HTTP/1.1" 302 0
+2023-08-13 11:53:11,312: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_fine_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:03:42,170: Text-to-speech conversion successful!
+2023-08-13 12:03:42,173: 127.0.0.1 - - [13/Aug/2023 12:03:42] "POST /text-to-speech HTTP/1.1" 200 -
+2023-08-13 12:06:48,310: Received request for text-to-speech...
+2023-08-13 12:06:48,315: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 12:06:48,840: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_semantic_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:06:48,903: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_coarse_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:06:48,963: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_fine_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:18:05,880: Text-to-speech conversion successful!
+2023-08-13 12:18:05,889: 127.0.0.1 - - [13/Aug/2023 12:18:05] "POST /text-to-speech HTTP/1.1" 200 -
+2023-08-13 12:29:47,603:  * Detected change in 'C:\\Users\\jerem\\anaconda3\\envs\\soloknows\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\core.py', reloading
+2023-08-13 12:29:47,651:  * Detected change in 'C:\\Users\\jerem\\anaconda3\\envs\\soloknows\\Lib\\site-packages\\pip\\_vendor\\packaging\\markers.py', reloading
+2023-08-13 12:29:49,810:  * Restarting with watchdog (windowsapi)
+2023-08-13 12:29:54,549: Initializing the processor and model...
+2023-08-13 12:29:54,549: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 12:29:55,089: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 12:29:55,143: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 12:29:55,249: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 12:29:55,381: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 12:29:55,523: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-13 12:30:16,403: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+2023-08-13 12:30:33,256: Using device: cuda
+2023-08-13 12:30:33,272: Starting the server...
+2023-08-13 12:30:33,303:  * Debugger is active!
+2023-08-13 12:30:33,303:  * Debugger PIN: 101-693-516
+2023-08-13 12:30:33,507: Received request for text-to-speech...
+2023-08-13 12:30:33,507: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 12:30:34,009: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_semantic_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:30:34,088: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_coarse_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:30:34,150: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_fine_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:39:13,155: Text-to-speech conversion successful!
+2023-08-13 12:39:13,155: 127.0.0.1 - - [13/Aug/2023 12:39:13] "POST /text-to-speech HTTP/1.1" 200 -
+2023-08-13 12:40:33,155: Received request for text-to-speech...
+2023-08-13 12:40:33,155: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 12:40:33,726: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_semantic_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:40:33,789: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_coarse_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:40:33,852: https://huggingface.co:443 "HEAD /ylacombe/bark-large/resolve/main/speaker_embeddings/v2/en_speaker_8_fine_prompt.npy HTTP/1.1" 302 0
+2023-08-13 12:48:28,581: Text-to-speech conversion successful!
+2023-08-13 12:48:28,584: 127.0.0.1 - - [13/Aug/2023 12:48:28] "POST /text-to-speech HTTP/1.1" 200 -
+2023-08-13 15:08:00,845:  * Detected change in 'C:\\Users\\jerem\\AppData\\Roaming\\Python\\Python310\\site-packages\\transformers\\__init__.py', reloading
+2023-08-13 15:08:02,256:  * Restarting with watchdog (windowsapi)
+2023-08-13 15:08:22,660: Initializing the processor and model...
+2023-08-13 15:08:22,660: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 15:08:23,146: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 15:08:23,209: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 15:08:23,272: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 15:08:23,319: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 15:08:23,482: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0
+2023-08-13 15:08:49,997: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/generation_config.json HTTP/1.1" 200 0
+2023-08-13 15:09:10,108: Using device: cuda
+2023-08-13 15:09:10,124: Starting the server...
+2023-08-13 15:09:10,170: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-13 15:09:10,170: [33mPress CTRL+C to quit[0m
+2023-08-13 15:09:10,186:  * Restarting with watchdog (windowsapi)
+2023-08-13 15:09:16,099: Initializing the processor and model...
+2023-08-13 15:09:16,114: Starting new HTTPS connection (1): huggingface.co:443
+2023-08-13 15:09:16,647: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+2023-08-13 15:09:16,710: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 15:09:16,765: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/speaker_embeddings_path.json HTTP/1.1" 200 0
+2023-08-13 15:09:16,828: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-08-13 15:09:16,969: https://huggingface.co:443 "HEAD /suno/bark/resolve/main/config.json HTTP/1.1" 200 0

@@ -1,0 +1,132 @@
+
+/* -------------------- 10. Control Area Styles -------------------------------------- */
+
+#controlContainer {
+    position: absolute;
+    /* Make sure this line is present */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* Adjusted width */
+    margin-left: 0;
+    /* Centers the controlContainer */
+    bottom: 2%;
+    transition: width 0.42s ease-in-out, margin-left 0.42s ease-in-out, bottom 0.42s ease-in-out;
+}
+
+#newChatButton {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 3vh;
+    width: 7vw;
+    /* Adjusted width */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 0vw;
+    margin-right: 5vw;
+}
+
+
+.clearAllChatsButton {
+    width: 11vh;
+}
+
+
+/* Switch Controls Styles  */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    /* Adjusted width */
+    height: 30px;
+    margin-right: 1vw;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "\f6a9";
+    /* Unicode for the volume-up icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    height: 26px;
+    width: 24px;
+    left: 3px;
+    /* Adjusted left padding */
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 50%;
+}
+
+input:checked+.slider:before {
+    content: "\f028";
+    /* Unicode for the volume-mute icon */
+    transform: translateX(38px);
+    /* Adjusted translation value */
+}
+
+input:checked+.slider {
+    background-color:var(--primary-color);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* API Area Styles */
+
+
+#modelNameDisplay,
+#apiKeyDisplay {
+    position: absolute;
+    left: 51vw;
+    /* Centers the element horizontally */
+    transform: translateX(-50%);
+    /* Shifts the element left by half its width */
+    bottom: 2%;
+    width: 20vw;
+    /* You can adjust the width as needed */
+    color: var(--text-dark-color);
+    font-size: 1.2vh;
+    font-style: italic;
+    text-align: center;
+}
+
+#modelNameDisplay {
+    margin-top: -1vh;
+}

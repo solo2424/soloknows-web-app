@@ -1,0 +1,252 @@
+
+/* -------------------------- 11. Sidebar Styles for Mobile ------------------------------------ */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 999;
+    /* ensure it sits below the sidebar */
+    display: none;
+    /* Keep the overlay hidden by default */
+}
+
+
+#sidebar {
+    position: fixed;
+    width: 60%;
+    /* Considered 60% of the viewport width for the sidebar */
+    right: -60%;
+    /* Initial position off the screen */
+    top: 5%;
+    height: 95%;
+    /* Full height of the viewport */
+    transition: right 0.5s ease-in-out;
+    z-index: 1002;
+    background-color: var(--sidebar-background-color);
+    border-top-left-radius: 1.5vh;
+    border-bottom-left-radius: 1.5vh;
+    border-left: .2vh solid var(--border-color);
+}
+
+#sidebar.open {
+    right: 0;
+    /* Sidebar is visible when open */
+}
+
+#sidebar.closed {
+    right: -60%;
+    /* Sidebar is off the screen when closed */
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    #sidebar {
+        width: 80%;
+        /* Increasing sidebar width for very small screens */
+        right: -80%;
+    }
+
+    #sidebar.closed {
+        right: -80%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    #sidebar {
+        width: 70%;
+        /* Adjusted sidebar width for medium-sized screens */
+        right: -70vw;
+    }
+
+    #sidebar.closed {
+        right: -70%;
+    }
+}
+
+
+/* Saved Chats Styles */
+
+#savedChatsContainer {
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--savedChats-background-color);
+    padding: 2vw;
+    /* Increased padding for touch */
+    border-radius: 1.5vh;
+    box-shadow: 0vh 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
+    height: 78%;
+    margin: 1vh;
+}
+
+#saveChats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#savedChatsList {
+    list-style: none;
+    padding: 2vh 2vw;
+    /* Adjusted padding for consistent spacing */
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    border-radius: 1.5vh;
+    box-shadow: 0vh 0.3vh 0.15vh rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+#savedChatsList::-webkit-scrollbar {
+    width: 1%;
+}
+
+#savedChatsList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5vh;
+}
+
+#savedChatsList::-webkit-scrollbar-thumb:hover {
+    background: var(--button-hover-color);
+}
+
+.title,
+.titleButton {
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 0.1vw solid var(--border-color);
+    border-radius: 0.5vh;
+    margin: 0.5vh 0.5vw;
+    /* Adjusted margin for consistent spacing */
+    max-width: 85%;
+    /* Reduced max-width for better display */
+}
+
+.title:hover,
+.titleButton:hover {
+    background-color: var(--button-hover-color);
+}
+
+.title-wrapper,
+.actions-wrapper,
+.list-item-wrapper,
+.titleAndTrashContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title {
+    border-color: #000000;
+}
+
+.actions-wrapper {
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.far,
+.fas {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.5vh;
+    /* Increased icon size for touch */
+}
+
+.fa-trash-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 0.5vh 0.5vw;
+    /* Adjusted margin for spacing */
+    border: 0.1vw solid #888;
+    border-radius: 0.5vh;
+    padding: 0.5vh 0.5vw;
+    /* Adjusted padding for better touch experience */
+}
+
+/* Sidebar Buttons Styles */
+
+#sidebarButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    /* Adjusted to lift the buttons slightly from the absolute bottom */
+    padding-left: 2vw;
+}
+
+.clearAllChatsButton,
+.logout-button {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh 2vw;
+    /* Increased padding for better touch experience */
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.5vh;
+    /* Increased font size for better readability */
+    white-space: nowrap;
+    height: auto;
+    /* Let the button's height adjust based on content and padding */
+    width: 40%;
+    /* Adjusted width to be more responsive */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.clearAllChatsButton:hover,
+.logout-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+
+    .clearAllChatsButton,
+    .logout-button {
+        font-size: 2vh;
+        /* Slightly increased font size for very small screens */
+        padding: 1.2vh 2.5vw;
+        /* Adjusted padding */
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+
+    .clearAllChatsButton,
+    .logout-button {
+        font-size: 1.8vh;
+        /* Adjusted font size for medium-sized screens */
+        padding: 1.1vh 2.2vw;
+        /* Adjusted padding */
+    }
+}

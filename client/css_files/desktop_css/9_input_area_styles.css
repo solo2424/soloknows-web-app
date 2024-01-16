@@ -1,0 +1,66 @@
+
+/* ---------------------- 9. Input Area Styles --------------------------------------- */
+
+#inputContainer {
+    position: absolute;
+    /* Make sure this line is present */
+    width: 70%;
+    /* Adjusted width */
+    height: auto;
+    /* Let the container size itself according to its content */
+    padding-bottom: 1%;
+    /* Added some vertical padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+    margin-left: 0;
+    /* Adjusted left margin */
+    bottom: 4%;
+    transition: width 0.42s ease-in-out, margin-left 0.42s ease-in-out, bottom 0.42s ease-in-out;
+
+}
+
+#inputText {
+    width: 70vw;
+    /* Adjusted width */
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh;
+    outline: none;
+    font-size: 1.2vh;
+    font-style: normal;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    margin-right: 0;
+}
+
+#inputText::placeholder {
+    font-style: italic;
+}
+
+#submitButton {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh 0;
+    margin-left: 1vw;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+    font-size: 1.2vh;
+    font-weight: bold;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    /* Adjusted width */
+    margin-right: 1vw;
+    /* or any value */
+}
+
+#submitButton:hover {
+    background-color: var(--button-hover-color);
+}
