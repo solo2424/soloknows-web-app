@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #bb86fc;
+    /* Medium Purple */
+    --secondary-color: #cf94fd;
+    /* Lavender */
+    --tertiary-color: #f3e8fd;
+    /* Lavender Blush */
+    --text-light-color: #ffffff;
+    --text-dark-color: #000000;
+    --background-color: #f8f2fd;
+    /* Lavender */
+    --border-color: #e8d7f9;
+    /* Thistle */
+    --nav-background-color: #bb86fc;
+    /* Medium Purple */
+    --sidebar-background-color: #f8f2fd;
+    /* Lavender */
+    --savedChats-background-color: #cf94fd;
+    /* Lavender */
+    --navHover-background-color: #cf94fd;
+    /* Lavender */
+    --messages-background-color: #f8f2fd;
+    /* Lavender */
+    --messages-bot-bubble-color: #cf94fd;
+    /* Lavender */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #bb86fc;
+    /* Medium Purple */
+    --messages-user-text-color: #000000;
+    --timestamp-text-color: #884dff;
+    /* Han Purple */
+    --scrollbar-color: #e8d7f9;
+    /* Thistle */
+    --scrollbar-hover-color: #d1b1f5;
+    /* Thistle */
+    --button-hover-color: #cf94fd;
+    /* Lavender */
+    --user-info-bgcolor: #cf94fd;
+    /* Lavender */
+    --usermenu-background-color: #ffffff;
+}

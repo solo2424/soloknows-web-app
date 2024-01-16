@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #228B22;
+    /* Forest Green */
+    --secondary-color: #2E8B57;
+    /* Sea Green */
+    --tertiary-color: #3CB371;
+    /* Medium Sea Green */
+    --text-light-color: #ffffff;
+    --text-dark-color: #000000;
+    --background-color: #f0fff0;
+    /* Honeydew */
+    --border-color: #90ee90;
+    /* Light Green */
+    --nav-background-color: #228B22;
+    /* Forest Green */
+    --sidebar-background-color: #e0ffe0;
+    /* Mint Cream */
+    --savedChats-background-color: #2E8B57;
+    /* Sea Green */
+    --navHover-background-color: #2E8B57;
+    /* Sea Green */
+    --messages-background-color: #e0ffe0;
+    /* Mint Cream */
+    --messages-bot-bubble-color: #2E8B57;
+    /* Sea Green */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #228B22;
+    /* Forest Green */
+    --messages-user-text-color: #000000;
+    --timestamp-text-color: #556b2f;
+    /* Dark Olive Green */
+    --scrollbar-color: #c1e1c1;
+    /* Pale Green */
+    --scrollbar-hover-color: #a3d9a3;
+    /* Light Green */
+    --button-hover-color: #2E8B57;
+    /* Sea Green */
+    --user-info-bgcolor: #2E8B57;
+    /* Sea Green */
+    --usermenu-background-color: #ffffff;
+}

@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #ff9d00;
+    /* Orange */
+    --secondary-color: #ffbf69;
+    /* Peach */
+    --tertiary-color: #fff2e5;
+    /* Beige */
+    --text-light-color: #000000;
+    --text-dark-color: #000000;
+    --background-color: #fffcee;
+    /* Cream */
+    --border-color: #ffd699;
+    /* Light Orange */
+    --nav-background-color: #ff9d00;
+    /* Orange */
+    --sidebar-background-color: #fffcee;
+    /* Cream */
+    --savedChats-background-color: #ffbf69;
+    /* Peach */
+    --navHover-background-color: #ffbf69;
+    /* Peach */
+    --messages-background-color: #fffcee;
+    /* Cream */
+    --messages-bot-bubble-color: #ffbf69;
+    /* Peach */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #ff9d00;
+    /* Orange */
+    --messages-user-text-color: #000000;
+    --timestamp-text-color: #664400;
+    /* Brown */
+    --scrollbar-color: #ffd699;
+    /* Light Orange */
+    --scrollbar-hover-color: #ffc266;
+    /* Light Peach */
+    --button-hover-color: #ff9d00;
+    /* Orange */
+    --user-info-bgcolor: #ffbf69;
+    /* Peach */
+    --usermenu-background-color: #ffffff;
+}

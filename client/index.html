@@ -1,29 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>SoLoKnows-Local</title>
-    <!-- Stylesheet file path updated -->
-    <link rel="stylesheet" type="text/css" href="/global.css" media="screen and (min-width: 1025px)">
-    <link rel="stylesheet" type="text/css" href="/global.css"
-        media="screen and (min-width: 601px) and (max-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width: 600px)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloKnows Web App</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Add this to the <head> of your HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/tomorrow-night-bright.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+
+    <link id="theme-stylesheet" rel="stylesheet" href="/css_files/color_themes/defaultTheme.css">
+    
+
+
+    <!-- Stylesheet file path -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/css_files/desktop_css/1_color_theme.css">-->
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/2_global_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/3_main_container_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/4_navigation_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/5_user_menu_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/6_settings_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/7_login_signup_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/8_chat_area_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/9_input_area_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/10_contol_area_styles.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/desktop_css/11_sidebar_styles.css" media="screen and (min-width: 601px)">
+    
+    <!-- Stylesheet file path for Mobile -->
+
+<!--  <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/1_mobile_color_theme.css" media="screen and (max-width: 600px)">-->
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/2_mobile_global_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/3_mobile_main_container.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/4_mobile_navigation_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/5_mobile_user_menu_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/6_mobile_settings_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/7_mobile_login_signup_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/8_mobile_chat_area_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/9_mobile_input_area_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/10_mobile_control_area_styles.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="/css_files/mobile_css/11_mobile_sidebar_styles.css" media="screen and (max-width: 600px)">
+
+
+
     <!-- Font awesome file path updated -->
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-6.4.0-web/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-
     <nav>
         <ul>
-            <li id="userProfile"><a href="#" class="icon"><i class="fas fa-user-circle"></i></a></li>
+            <li id="userProfile" class="user-profile">
+                <a href="#" class="icon">
+                    <!-- If no user image is uploaded, the Font Awesome icon is shown; otherwise, use the <img> tag -->
+                    <i class="fas fa-user-circle" id="user-icon"></i>
+                </a>
+            </li>
             <li id="systemMessages"><a href="#">Check this area for important information</a></li>
             <li id="sidebarToggleNav"><a href="#" class="icon"><i class="fas fa-th-list"></i></a></li>
         </ul>
-    </nav>
+    <!-- New Modal Dialog for API Input -->
+    <div id="api-key-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-api-key-modal">&times;</span>
+            <label for="api-key-input">Enter API Key:</label>
+            <input type="text" id="api-key-input">
+            <button id="save-api-key-button">Save</button>
+        </div>
+    </div>
+    
+    <!-- New Modal Dialog for Model Name Input -->
+    <div id="model-name-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-model-name-modal">&times;</span>
+            <label for="model-name-input">Enter Model Name:</label>
+            <input type="text" id="model-name-input">
+            <button id="save-model-name-button">Save</button>
+        </div>
+    </div>
+  
+</nav>
 
-
+    <!-- User Menu Section -->
+    <div class="user-menu" id="user-menu">
+        <div class="user-info">
+            <p id="first-name">First Name: John</p> <!-- Replace with actual first name -->
+            <p id="last-name">Last Name: Doe</p> <!-- Replace with actual last name -->
+            <p id="email">Email: john.doe@example.com</p> <!-- Replace with actual email -->
+        </div>
+        <select id="apiSelect">
+            <option value="OpenAI">OpenAI</option>
+            <option value="OpenSource">Open Source</option>
+        </select>
+        <button id="settings-button">Settings</button>
+    </div>
+    
     <!-- Login Popup -->
     <div id="login-popup" class="form-popup">
         <form id="login-form" class="container">
@@ -54,9 +130,15 @@
         <form id="signup-form" class="container">
             <h1>Sign Up</h1>
 
+            <label for="signup-first-name"><b>First Name</b></label>
+            <input type="text" id="signup-first-name" placeholder="Enter First Name" name="first-name" required>
+            
+            <label for="signup-last-name"><b>Last Name</b></label>
+            <input type="text" id="signup-last-name" placeholder="Enter Last Name" name="last-name" required>
+            
             <label for="signup-email"><b>Email</b></label>
             <input type="text" id="signup-email" placeholder="Enter Email" name="email" required>
-
+            
             <label for="signup-password"><b>Password</b></label>
             <input type="password" id="signup-password" placeholder="Enter Password" name="psw" required>
 
@@ -82,59 +164,39 @@
         <img id="botAvatarGreeting" src="/images/ChatbotAvatar.png" alt="Chatbot Avatar">
         <p id="greetingMessage">Hello, I'm SoLoBot! How can I assist you?</p>
     </div>
+
     <!-- Chat Area Wrapper -->
     <div id="chatAreaWrapper">
-        <div id="chatArea">
-            <!-- Assistant Message -->
-            <div class="message-container assistant-container">
-                <div class="avatar assistant-avatar"></div>
-                <div class="message assistant">Hello, I'm the assistant!</div>
-            </div>
-            <!-- User Message -->
-            <div class="message-container user-container">
-                <div class="message user">Hi, I'm the user!</div>
-                <div class="avatar user-avatar"></div>
-            </div>
-            <!-- Additional chat content can be added here -->
+        <div id="chatArea"> <!-- Add an id here -->
+            <!-- Content will be dynamically added here -->
         </div>
+        <!-- Input Container -->
+        <div id="inputContainer">
+            <input type="text" id="inputText" placeholder="Type your message here...">
+            <button id="submitButton">Submit</button>
+        
+        </div>
+        <!-- Control Container -->
+        <div id="controlContainer">
+            <button id="newChatButton" class="new-chat-button">New Chat</button>
+            <label class="switch">
+                <input type="checkbox" id="readAloudToggle" style="outline: none; box-shadow: none;">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <p id="apiKeyDisplay"></p>
+        <p id="modelNameDisplay"></p>
     </div>
 
-    <!-- Input for user avatar upload (moved outside the chatArea) -->
-    <input type="file" id="userAvatarInput" accept="image/*" style="display: none;">
-    <!-- Input Container -->
-    <div id="inputContainer">
-        <input type="text" id="inputText" placeholder="Type your message here...">
-        <button id="submitButton">Submit</button>
-    </div>
-    <!-- Control Container -->
-    <div id="controlContainer">
-        <button id="clearChat">Clear Chat</button>
-        <select id="apiSelect">
-            <option value="OpenAI">OpenAI</option>
-            <option value="OpenSource">Open Source</option>
-        </select>
-        <button id="saveChat">Save Chat</button>
-    </div>
-    <p id="apiKeyDisplay"></p>
-    <p id="modelNameDisplay"></p>
-</div>
-
-
-
-
-
-
+<!-- Input for user avatar upload (moved outside the chatArea) -->
+<input type="file" id="userAvatarInput" accept="image/*" style="display: none;">
 
 
 
 
     <!-- Sidebar -->
+    <div id="overlay"></div>
     <div id="sidebar" class="closed">
-        <div id="sidebarToggleWrapper">
-            <div id="sidebarToggle">
-                <i class="fas fa-th-list"></i>
-            </div>
-        </div>
         <div class="sidebar-content">
             <h2 style="text-align: center;">Saved Chats</h2>
             <div id="savedChatsContainer">
@@ -143,7 +205,7 @@
                 </ul>
             </div>
             <div id="sidebarButtonContainer">
-                <button id="clear-button" class="clear-button">Clear</button>
+                <button id="clearAllChatsButton" class="clearAllChatsButton">Clear</button>
                 <button id="logout-button" class="logout-button">Logout</button>
             </div>
         </div>
@@ -158,6 +220,58 @@
         </div>
     </div>
 
+<!-- Settings Popup -->
+<div class="settings-popup" id="settings-popup">
+    <div class="settings-content">
+        <div class="settings-screen">
+            <div class="column1-container">
+                <!-- Theme Selection -->
+                <div id="theme-selection">
+                    <h3>Select Theme</h3>
+                    <select id="theme-dropdown" class="theme-dropdown">
+                        <!-- Theme options will be populated here from JavaScript -->
+                    </select>
+                </div>
+                <h3 for="clear-avatar-btn">Clear User Uploaded Avatar:</h3>
+                <button id="clear-avatar-btn">Clear User Uploaded Avatar</button>
+                <label for="mode-dropdown">Select Chatbot Mode:</label>
+                <select id="mode-dropdown">
+                    <option value="general">General Question</option>
+                    <option value="coding">Coding</option>
+                    <option value="chat">Just Chat</option>
+                    <option value="create">Create Art</option>
+                </select>
+            </div>
+            <!-- Column 2 Container -->
+            <div class="column2-container">
+                <!-- Your content for column 2 goes here -->
+            </div>
+            <!-- Column 3 Container -->
+            <div class="column3-container">
+            <!-- Models Selection Section -->
+            <div class="model-selection">
+                <h3>Select Available Models:</h3>
+                <ul>
+                    <li data-model="openai" onclick="selectModel(this)">Open AI</li>
+                    <li data-model="claude" onclick="selectModel(this)">Claude</li>
+                    <li data-model="bard" onclick="selectModel(this)">Google's Bard</li>
+                    <li data-model="llama" onclick="selectModel(this)">LLama</li>
+                    <li data-model="opensource" onclick="selectModel(this)">Open Source</li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+        <button id="close-settings">Close</button>
+    </div>
+</div>
+
+
+
+    <!-- Choices.js Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -171,6 +285,8 @@
     <!-- Add the Firebase Storage SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
+    <!-- Text to Speech filepath updated -->
+    <!-- <script src="/tts.js" defer></script>-->
 
     <!-- JavaScript file path updated -->
     <script src="/script.js" defer></script>

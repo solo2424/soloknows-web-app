@@ -1,0 +1,8 @@
+python c:/Users/jerem/Coding_Projects/soloknows-web-app/client/cudatest.py
+
+python c:/Users/jerem/Coding_Projects/soloknows-web-app/server/text_to_speech_server.py
+
+python c:/Users/jerem/Coding_Projects/soloknows-web-app/client/barktest.py
+
+pm2 start server/ecosystem.config.cjs
+

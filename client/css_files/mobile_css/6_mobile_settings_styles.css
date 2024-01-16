@@ -1,0 +1,262 @@
+/* =================== 6. Mobile Settings Styles =================== */
+
+/* Resetting default margin and padding for better control */
+body,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1002;
+}
+
+.settings-content {
+    position: relative;
+    width: 95%;
+    /* Adjusted to 95% for more edge space on mobile */
+    height: auto;
+    /* Let it take as much height as content needs */
+    margin: 5% auto;
+    /* Centering and adding a bit of top margin for better positioning */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    /* In case the content is too long, it will be scrollable */
+}
+
+/* Single Column Layout for Mobile */
+.settings-screen {
+    display: block;
+    /* Switched from flex to block for single column layout */
+}
+
+.column1-container,
+.column2-container,
+.column3-container {
+    width: 100%;
+    /* Taking full width */
+    padding: 0 10px;
+    /* Keeping horizontal padding for space on the sides */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Added vertical space between sections */
+}
+
+/* Removing divider lines for mobile */
+.column1-container,
+.column2-container {
+    border-right: none;
+    height: auto;
+    /* Let each section take its natural height */
+}
+
+/* Theme Select Settings */
+
+#theme-selection {
+    margin-top: 20px;
+    /* Increased margin for better spacing on mobile */
+}
+
+.choices {
+    width: 100%;
+}
+
+.choices__list--dropdown .choices__item {
+    display: flex;
+    align-items: center;
+}
+
+.theme-color-square {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* ======  Mobile Clear Avatar Styling  ====== */
+
+/* Styles for the header associated with the button */
+h3[for="clear-avatar-btn"] {
+    font-size: 4vw;
+    /* Increased font size for mobile */
+    font-weight: bold;
+    color: #333;
+    margin-top: 10%;
+    /* Increased margin for mobile spacing */
+    text-align: center;
+    /* Center alignment for mobile */
+}
+
+/* Optional: hover effect for the header when mouse is over the button */
+/* (We might not need this on mobile as hover is not common on touch devices, but it's retained just in case) */
+#clear-avatar-btn:hover+h3[for="clear-avatar-btn"] {
+    color: #ff4b5c;
+}
+
+/* Button styles for 'clear-avatar-btn' */
+#clear-avatar-btn {
+    width: 100%;
+    /* Full width button for easier touch access */
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    /* Increased padding for mobile */
+    border: none;
+    border-radius: 5px;
+    font-size: 4vw;
+    /* Increased font size for mobile */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+#clear-avatar-btn:hover {
+    background-color: #e43f50;
+}
+
+/* Focus and active state for the button */
+#clear-avatar-btn:focus,
+#clear-avatar-btn:active {
+    outline: none;
+    background-color: #d32f45;
+}
+
+/* ======  Mobile Chatbot Mode Selection Styling  ====== */
+
+/* Label styling */
+label[for="mode-dropdown"] {
+    font-size: 100%;
+    /* Increased font size for mobile */
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0%;
+    /* Added vertical margin for spacing */
+    display: block;
+    /* Make label block-level for better spacing */
+    text-align: center;
+    /* Center alignment for mobile */
+    margin-top: 10%;
+}
+
+/* Dropdown styling */
+#mode-dropdown {
+    width: 100%;
+    /* Full width for mobile */
+    font-size: 100%;
+    /* Increased font size for mobile */
+    padding: 12px 24px;
+    /* Increased padding for mobile */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    text-align: center;
+        /* Center alignment for mobile */
+    margin-top: 0%;
+}
+
+/* Dropdown hover effect */
+#mode-dropdown:hover {
+    border-color: #999;
+}
+
+/* Dropdown focus effect (when clicked or navigated via keyboard) */
+#mode-dropdown:focus {
+    border-color: #555;
+    outline: none;
+}
+
+/* Style for dropdown options */
+#mode-dropdown option {
+    font-size: 4vw;
+    /* Increased font size for mobile */
+    padding: 8px 16px;
+    /* Increased padding for mobile */
+}
+
+/* ====== Mobile Close button styling ====== */
+
+#close-settings {
+    position: absolute;
+    top: 3%;
+    right: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    /* This gives the pill shape */
+    border: none;
+    font-size: 100%;
+    padding: 0.3em .5em;
+    /* Vertical and horizontal padding to give the button some space */
+    color: white;
+    /* Assuming the text inside the button should be white */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+/* New Styles */
+
+/* Individual settings styling for mobile */
+
+/* Theme Selection */
+#theme-selection {
+    margin-bottom: 5%;
+    /* Increased margin for mobile spacing */
+    text-align: center;
+    /* Center alignment for mobile */
+}
+
+/* Clear Avatar Button */
+/* (No changes needed as it's already mobile-friendly) */
+
+/* Chatbot Mode Dropdown */
+/* (No changes needed as it's already mobile-friendly) */
+
+/* Model Selection Box Styling */
+
+.model-box h3 {
+    margin-top: 10%;
+    /* Adjusted margin for mobile spacing */
+    font-size: 4vw;
+    /* Increased font size for mobile */
+    margin-bottom: 3%;
+    /* Adjusted margin for mobile spacing */
+    color: #333;
+    font-weight: bold;
+    text-align: center !important;
+    /* Center alignment for mobile */
+}
+
+/* Styling for each individual model box (list item) */
+.model-selection li {
+    border: 1px solid #ccc;
+    padding: 5%;
+    /* Increased padding for mobile touch targets */
+    margin-bottom: 5%;
+    /* Increased margin for mobile spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+/* Styling for the selected model box */
+.model-selection li.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}

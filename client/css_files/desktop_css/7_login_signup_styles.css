@@ -1,0 +1,86 @@
+
+/* -------------------- 7. Login/Signup Forms Styles --------------------------------------- */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.3vh solid var(--border-color);
+    max-width: 30vw;
+    padding: 2vh;
+    background-color: var(--background-color);
+}
+
+.container {
+    padding: 2vh;
+    background-color: var(--background-color);
+}
+
+.container input[type=text],
+.container input[type=password] {
+    width: 100%;
+    padding: 1.5vh;
+    margin: 0.5vh 0 2vh 0;
+    border: none;
+    background: var(--background-color);
+}
+
+.container input[type=text]:focus,
+.container input[type=password]:focus {
+    background-color: var(--background-color);
+    outline: none;
+}
+
+.container .btn {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 1.6vh 2vw;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1vh;
+    opacity: 0.8;
+}
+
+.container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+#login-popup,
+#signup-popup {
+    display: none;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.google-button {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 0.1vh;
+    background-color: var(--background-color);
+}
+
+.or-box {
+    margin: 0 1vw;
+    padding: 0.5vh 1vw;
+    background-color: var(--background-color);
+}

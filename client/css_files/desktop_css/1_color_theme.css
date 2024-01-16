@@ -1,0 +1,68 @@
+/* Theme Color */
+
+
+/*var(--primary-color);
+ var(--secondary-color);
+ var(--tertiary-color);
+ var(--background-color);
+ var(--border-color);
+ var(--text-light-color);
+ var(--text-dark-color);
+ var(--nav-background-color);
+ var(--sidebar-background-color);
+ var(--savedChats-background-color);
+ var(--messages-background-color);
+ var(--messages-bot-bubble-color);
+ var(--messages-bot-text-color);
+ var(--messages-user-bubble-color);
+ var(--messages-user-text-color);
+ var(--timestamp-text-color);
+ var(--scrollbar-color);
+ var(--scrollbar-hover-color);
+ var(--button-hover-color);
+ var(--user-info-bgcolor);
+ */
+
+
+:root {
+    --primary-color: #e3f2fd;
+    /* Blue Lightest */
+    --secondary-color: #b3e5fc;
+    /* Light Blue Light */
+    --tertiary-color: #e0e0e0;
+    /* Grey */
+    --text-light-color: #000000;
+    /* Black */
+    --text-dark-color: #000000;
+    /* Black for better readability */
+    --background-color: #fafafa;
+    /* Grey Lightest */
+    --border-color: #cfd8dc;
+    /* Blue Grey Light */
+    --nav-background-color: #e3f2fd;
+    /* Blue Lightest */
+    --sidebar-background-color: #fafafa;
+    /* Grey Lightest */
+    --savedChats-background-color: #e3f2fd;
+    /* Blue Grey Light */
+    --navHover-background-color: #b3e5fc;
+    /* Light Blue Light */
+    --messages-background-color: #fafafa;
+    /* Grey Lightest */
+    --messages-bot-bubble-color: #e3f2fd;
+    /* Blue Lightest */
+    --messages-bot-text-color: #000000;
+    /* Black */
+    --messages-user-bubble-color: #b3e5fc;
+    /* Light Blue Light */
+    --messages-user-text-color: #000000;
+    /* Black */
+    --timestamp-text-color: #000000;
+    /* Black */
+    --scrollbar-color: #e0e0e0;
+    /* Grey */
+    --scrollbar-hover-color: #bdbdbd;
+    /* Grey Dark */
+    --button-hover-color: #328db8;
+    --user-info-bgcolor: #b3e5fc;
+}

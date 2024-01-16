@@ -1,0 +1,173 @@
+
+/* -------------------- 5. Login/Signup Forms Styles for Mobile --------------------------------------- */
+
+/* Styles for form-popup */
+.form-popup {
+    display: none;
+    /* Hidden by default, can be shown using JavaScript */
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90vh;
+    width: 100%;
+    padding: 2vh 0;
+    border: 0.3vh solid var(--border-color);
+    background-color: var(--background-color);
+    z-index: 9;
+}
+
+/* Styles for form container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 2vw;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+/* Styles for text and password input fields */
+.container input[type=text],
+.container input[type=password] {
+    font-size: 4vw;
+    /* Responsive font size */
+    padding: 2vh;
+    margin: 1vh 0;
+    box-sizing: border-box;
+    background: var(--background-color);
+    width: 95%;
+}
+
+/* Focus styles for input fields */
+.container input[type=text]:focus,
+.container input[type=password]:focus {
+    background-color: var(--input-focus-bg-color);
+    /* Assuming this variable is defined for input focus background */
+    outline: none;
+}
+
+/* Styles for buttons */
+.container .btn {
+    font-size: 4vw;
+    padding: 2vh;
+    background-color: var(--button-bg-color);
+    /* Assuming this variable is defined for button background */
+    color: var(--primary-color);
+    width: 95%;
+    margin: 1vh 0;
+}
+
+/* Hover styles for buttons */
+.container .btn:hover {
+    background-color: var(--button-hover-bg-color);
+    /* Assuming this variable is defined for button hover background */
+}
+
+/* Login Popup Specific Styles */
+#login-popup {
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 5vh 5vw;
+    overflow-y: auto;
+}
+
+#login-popup h1 {
+    font-size: 6vh;
+    margin: 0;
+}
+
+#login-popup .container {
+    max-width: 100%;
+}
+
+#login-popup input {
+    width: 100%;
+    font-size: 4vw;
+    padding: 3vh 2vw;
+    margin: 2vh 0;
+}
+
+#login-popup .btn {
+    font-size: 4vw;
+    padding: 3vh;
+    width: 100%;
+    margin: 1vh 0;
+}
+
+#login-popup .google-button {
+    height: auto;
+    padding: 2vh;
+}
+
+#login-popup .or-separator {
+    margin: 2vh 0;
+}
+
+#login-popup .line {
+    height: 0.3vh;
+}
+
+#login-popup .or-box {
+    font-size: 4vw;
+    padding: 1vh 2vw;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Styles for Google button */
+.google-button {
+    width: 90%;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vh 0;
+}
+
+.line {
+    flex-grow: 1;
+    background-color: var(--separator-line-color);
+    /* Assuming this variable is defined for the separator line */
+}
+
+.or-box {
+    margin: 0 1vw;
+    padding: 0.5vh 1vw;
+    background-color: var(--or-box-bg-color);
+    /* Assuming this variable is defined for the or box background */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+
+    .container,
+    #login-popup .container {
+        padding: 4vh 1vw;
+    }
+
+    .container input,
+    #login-popup input {
+        font-size: 4.5vw;
+        padding: 2.5vh 1vw;
+    }
+
+    .container .btn,
+    #login-popup .btn {
+        font-size: 4.5vw;
+        padding: 2.5vh;
+    }
+}
+
+@media (min-width: 601px) {
+    /* Adjustments for larger mobile screens can be added here */
+}

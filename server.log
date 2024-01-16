@@ -186,3 +186,1208 @@ https://cloud.google.com/docs/authentication/getting-started
 2023-08-12T04:54:25.818Z - Received POST request on /api
 2023-08-12T04:54:25.818Z - OpenAI selected and API key found. Preparing to call OpenAI API.
 2023-08-12T15:00:00.789Z - Server listening on port 8080
+2023-08-12T15:08:03.394Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:08:03.394Z - Received POST request on /api
+2023-08-12T15:10:17.951Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:10:17.951Z - Received POST request on /api
+2023-08-12T15:14:53.656Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:14:53.656Z - Received POST request on /api
+2023-08-12T15:18:08.456Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:18:08.456Z - Received POST request on /api
+2023-08-12T15:43:25.102Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:43:25.102Z - Received POST request on /api
+2023-08-12T15:43:49.912Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T15:43:49.912Z - Received POST request on /api
+2023-08-12T19:44:42.268Z - Server listening on port 8080
+2023-08-12T19:59:53.044Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-12T19:59:53.044Z - Received POST request on /api
+2023-08-12T23:23:03.093Z - Server listening on port 8080
+2023-08-13T12:56:03.409Z - Server listening on port 8080
+2023-08-13T12:56:32.349Z - Received POST request on /api
+2023-08-13T12:56:32.349Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-13T15:23:37.922Z - Server listening on port 8080
+2023-08-13T15:23:56.570Z - Received POST request on /api
+2023-08-13T15:23:56.570Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-13T15:28:25.008Z - Server listening on port 8080
+2023-08-13T15:40:31.230Z - Server listening on port 8080
+2023-08-13T15:44:06.720Z - Server listening on port 8080
+2023-08-13T15:49:58.706Z - Server listening on port 8080
+2023-08-13T16:36:34.179Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-13T16:36:34.178Z - Received POST request on /api
+2023-08-15T17:12:32.476Z - Server listening on port 8081
+2023-08-17T11:08:00.157Z - Error: Either selected API or required information for API call is missing
+2023-08-17T11:08:00.157Z - Received POST request on /api
+2023-08-17T11:08:02.175Z - Received POST request on /api
+2023-08-17T11:08:02.175Z - Error: Either selected API or required information for API call is missing
+2023-08-17T11:08:06.423Z - Received POST request on /api
+2023-08-17T11:08:06.423Z - Error: Either selected API or required information for API call is missing
+2023-08-17T11:08:14.647Z - Error: Either selected API or required information for API call is missing
+2023-08-17T11:08:14.647Z - Received POST request on /api
+2023-08-17T11:15:27.883Z - Server listening on port 8081
+2023-08-17T11:40:34.051Z - Server listening on port 8081
+2023-08-17T12:33:02.217Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T12:33:02.217Z - Received POST request on /api
+2023-08-17T14:18:05.068Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:18:05.068Z - Received POST request on /api
+2023-08-17T14:18:32.204Z - Received POST request on /api
+2023-08-17T14:18:32.204Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:20:05.231Z - Received POST request on /api
+2023-08-17T14:20:05.231Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:23:07.836Z - Received POST request on /api
+2023-08-17T14:23:07.836Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:26:28.261Z - Received POST request on /api
+2023-08-17T14:26:28.261Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:51:19.125Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:51:19.125Z - Received POST request on /api
+2023-08-17T14:51:39.860Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T14:51:39.860Z - Received POST request on /api
+2023-08-17T19:27:38.222Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T19:27:38.222Z - Received POST request on /api
+2023-08-17T19:27:50.859Z - Received POST request on /api
+2023-08-17T19:27:50.859Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T19:28:31.799Z - Received POST request on /api
+2023-08-17T19:28:31.799Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T19:30:07.792Z - Received POST request on /api
+2023-08-17T19:30:07.792Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T19:33:57.578Z - Received POST request on /api
+2023-08-17T19:33:57.578Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T19:35:34.735Z - Received POST request on /api
+2023-08-17T19:35:34.735Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:05:58.876Z - Received POST request on /api
+2023-08-17T22:05:58.877Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:06:02.310Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:06:02.310Z - Received POST request on /api
+2023-08-17T22:26:09.263Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:26:09.263Z - Received POST request on /api
+2023-08-17T22:26:51.591Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:26:51.591Z - Received POST request on /api
+2023-08-17T22:41:38.704Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T22:41:38.704Z - Received POST request on /api
+2023-08-17T23:19:00.573Z - Server listening on port 8081
+2023-08-17T23:25:36.908Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T23:25:36.908Z - Received POST request on /api
+2023-08-17T23:35:18.305Z - Server listening on port 8081
+2023-08-17T23:35:31.917Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T23:35:31.917Z - Received POST request on /api
+2023-08-17T23:44:32.561Z - Received POST request on /api
+2023-08-17T23:44:32.561Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T23:48:34.975Z - Received POST request on /api
+2023-08-17T23:48:34.975Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T23:49:22.375Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-17T23:49:22.375Z - Received POST request on /api
+2023-08-18T00:03:15.858Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:03:15.858Z - Received POST request on /api
+2023-08-18T00:09:58.940Z - Received POST request on /api
+2023-08-18T00:09:58.941Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:10:24.146Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:10:24.146Z - Received POST request on /api
+2023-08-18T00:10:49.521Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:10:49.521Z - Received POST request on /api
+2023-08-18T00:11:11.476Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:11:11.476Z - Received POST request on /api
+2023-08-18T00:11:25.465Z - Received POST request on /api
+2023-08-18T00:11:25.465Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T00:12:48.281Z - Server listening on port 8080
+2023-08-18T00:32:09.097Z - Server listening on port 8080
+2023-08-18T19:23:16.491Z - Server listening on port 8080
+2023-08-18T19:35:48.706Z - Received POST request on /api
+2023-08-18T19:35:48.706Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:48:30.956Z - Received POST request on /api
+2023-08-18T19:48:30.956Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:48:46.826Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:48:46.826Z - Received POST request on /api
+2023-08-18T19:49:55.578Z - Received POST request on /api
+2023-08-18T19:49:55.578Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:50:13.389Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:50:13.389Z - Received POST request on /api
+2023-08-18T19:55:20.229Z - Received POST request on /api
+2023-08-18T19:55:20.230Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:55:40.988Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:55:40.988Z - Received POST request on /api
+2023-08-18T19:55:52.086Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:55:52.086Z - Received POST request on /api
+2023-08-18T19:56:08.758Z - Received POST request on /api
+2023-08-18T19:56:08.758Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:58:24.263Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:58:24.263Z - Received POST request on /api
+2023-08-18T19:58:35.526Z - Received POST request on /api
+2023-08-18T19:58:35.526Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:59:32.319Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:59:32.319Z - Received POST request on /api
+2023-08-18T19:59:49.655Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T19:59:49.655Z - Received POST request on /api
+2023-08-18T20:00:17.663Z - Received POST request on /api
+2023-08-18T20:00:17.663Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T20:02:42.904Z - Received POST request on /api
+2023-08-18T20:02:42.904Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T20:02:52.671Z - Received POST request on /api
+2023-08-18T20:02:52.671Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T22:06:21.119Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T22:06:21.119Z - Received POST request on /api
+2023-08-18T22:06:41.888Z - Received POST request on /api
+2023-08-18T22:06:41.888Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T22:20:58.200Z - Received POST request on /api
+2023-08-18T22:20:58.200Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-18T22:22:56.580Z - Received POST request on /api
+2023-08-18T22:22:56.580Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-23T17:07:25.826Z - Server listening on port 8080
+2023-08-23T17:07:48.801Z - Received POST request on /api
+2023-08-23T17:07:48.801Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-23T17:10:19.470Z - Received POST request on /api
+2023-08-23T17:10:19.470Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-23T17:10:34.366Z - Received POST request on /api
+2023-08-23T17:10:34.366Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-23T17:17:46.769Z - Server listening on port 8080
+2023-08-23T19:09:53.139Z - Received POST request on /api
+2023-08-23T19:09:53.139Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-26T22:09:14.590Z - Server listening on port 8080
+2023-08-26T22:55:13.657Z - Server listening on port 8080
+2023-08-27T01:24:10.641Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:24:10.641Z - Received POST request on /api
+2023-08-27T01:24:52.233Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:24:52.233Z - Received POST request on /api
+2023-08-27T01:31:33.106Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:31:33.106Z - Received POST request on /api
+2023-08-27T01:36:35.083Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:36:35.083Z - Received POST request on /api
+2023-08-27T01:39:21.331Z - Received POST request on /api
+2023-08-27T01:39:21.331Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:44:20.268Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:44:20.268Z - Received POST request on /api
+2023-08-27T01:50:10.452Z - Received POST request on /api
+2023-08-27T01:50:10.452Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:50:53.923Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:50:53.923Z - Received POST request on /api
+2023-08-27T01:52:28.549Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T01:52:28.549Z - Received POST request on /api
+2023-08-27T01:55:30.013Z - Received POST request on /api
+2023-08-27T01:55:30.013Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:00:33.798Z - Received POST request on /api
+2023-08-27T02:00:33.798Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:05:17.529Z - Received POST request on /api
+2023-08-27T02:05:17.529Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:08:13.767Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:08:13.767Z - Received POST request on /api
+2023-08-27T02:10:01.256Z - Received POST request on /api
+2023-08-27T02:10:01.256Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:22:02.688Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T02:22:02.688Z - Received POST request on /api
+2023-08-27T04:01:36.554Z - Server listening on port 8080
+2023-08-27T19:12:34.884Z - Server listening on port 8080
+2023-08-27T19:40:22.500Z - Server listening on port 8080
+2023-08-27T20:36:15.448Z - Server listening on port 8080
+2023-08-27T22:27:04.275Z - Received POST request on /api
+2023-08-27T22:27:04.275Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:26:25.284Z - Received POST request on /api
+2023-08-27T23:26:25.284Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:29:43.003Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:29:43.003Z - Received POST request on /api
+2023-08-27T23:30:05.342Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:30:05.342Z - Received POST request on /api
+2023-08-27T23:31:21.317Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:31:21.317Z - Received POST request on /api
+2023-08-27T23:35:26.923Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-27T23:35:26.923Z - Received POST request on /api
+2023-08-27T23:58:06.718Z - Received POST request on /api
+2023-08-27T23:58:06.718Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T15:05:52.551Z - Server listening on port 8080
+2023-08-29T21:39:56.697Z - Error: Either selected API or required information for API call is missing
+2023-08-29T21:39:56.697Z - Received POST request on /api
+2023-08-29T21:46:09.749Z - Error: Either selected API or required information for API call is missing
+2023-08-29T21:46:09.749Z - Received POST request on /api
+2023-08-29T21:48:44.029Z - Received POST request on /api
+2023-08-29T21:48:44.029Z - Error: Either selected API or required information for API call is missing
+2023-08-29T21:55:46.389Z - Received POST request on /api
+2023-08-29T21:55:46.389Z - Error: Either selected API or required information for API call is missing
+2023-08-29T22:00:18.224Z - Received POST request on /api
+2023-08-29T22:00:18.224Z - Error: Either selected API or required information for API call is missing
+2023-08-29T22:11:40.393Z - Received POST request on /api
+2023-08-29T22:11:40.393Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T22:11:56.764Z - Received POST request on /api
+2023-08-29T22:11:56.764Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:17:03.557Z - Server listening on port 8080
+2023-08-29T23:17:12.746Z - Received POST request on /api
+2023-08-29T23:17:12.746Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:20:13.747Z - Server listening on port 8080
+2023-08-29T23:20:25.574Z - Received POST request on /api
+2023-08-29T23:20:25.574Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:20:35.321Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:20:35.321Z - Received POST request on /api
+2023-08-29T23:21:15.028Z - Received POST request on /api
+2023-08-29T23:21:15.028Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:28:31.542Z - Received POST request on /api
+2023-08-29T23:28:31.542Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:28:39.630Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:28:39.630Z - Received POST request on /api
+2023-08-29T23:31:42.783Z - Received POST request on /api
+2023-08-29T23:31:42.783Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:31:59.442Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:31:59.442Z - Received POST request on /api
+2023-08-29T23:38:01.374Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:38:01.374Z - Received POST request on /api
+2023-08-29T23:38:11.750Z - Received POST request on /api
+2023-08-29T23:38:11.750Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:38:43.926Z - Received POST request on /api
+2023-08-29T23:38:43.926Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:43:47.733Z - Received POST request on /api
+2023-08-29T23:43:47.733Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:46:12.153Z - Received POST request on /api
+2023-08-29T23:46:12.153Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:50:30.647Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:50:30.647Z - Received POST request on /api
+2023-08-29T23:51:23.832Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:51:23.832Z - Received POST request on /api
+2023-08-29T23:56:18.086Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-29T23:56:18.086Z - Received POST request on /api
+2023-08-30T00:00:29.710Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T00:00:29.710Z - Received POST request on /api
+2023-08-30T10:06:01.547Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T10:06:01.547Z - Received POST request on /api
+2023-08-30T11:03:00.330Z - Received POST request on /api
+2023-08-30T11:03:00.330Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T11:03:36.833Z - Received POST request on /api
+2023-08-30T11:03:36.833Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:21:21.746Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:21:21.746Z - Received POST request on /api
+2023-08-30T13:24:39.153Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:24:39.153Z - Received POST request on /api
+2023-08-30T13:43:24.288Z - Received POST request on /api
+2023-08-30T13:43:24.288Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:56:33.203Z - Received POST request on /api
+2023-08-30T13:56:33.203Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:56:45.597Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T13:56:45.597Z - Received POST request on /api
+2023-08-30T13:58:05.221Z - Received POST request on /api
+2023-08-30T13:58:05.222Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T14:03:34.310Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T14:03:34.310Z - Received POST request on /api
+2023-08-30T14:04:27.698Z - Received POST request on /api
+2023-08-30T14:04:27.699Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-30T14:04:44.346Z - Received POST request on /api
+2023-08-30T14:04:44.346Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-31T23:57:02.063Z - Server listening on port 8080
+2023-08-31T23:57:19.644Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-08-31T23:57:19.644Z - Received POST request on /api
+2023-08-31T23:57:47.827Z - Received POST request on /api
+2023-08-31T23:57:47.827Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:06:34.834Z - Received POST request on /api
+2023-09-01T00:06:34.834Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:06:50.662Z - Received POST request on /api
+2023-09-01T00:06:50.662Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:07:00.085Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:07:00.085Z - Received POST request on /api
+2023-09-01T00:13:16.126Z - Received POST request on /api
+2023-09-01T00:13:16.126Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:13:24.750Z - Received POST request on /api
+2023-09-01T00:13:24.750Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:15:56.489Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:15:56.489Z - Received POST request on /api
+2023-09-01T00:16:04.346Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:16:04.346Z - Received POST request on /api
+2023-09-01T00:16:12.612Z - Received POST request on /api
+2023-09-01T00:16:12.612Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:41:33.894Z - Error: Either selected API or required information for API call is missing
+2023-09-01T00:41:33.894Z - Received POST request on /api
+2023-09-01T00:41:47.777Z - Received POST request on /api
+2023-09-01T00:41:47.777Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:41:48.704Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:41:48.704Z - Received POST request on /api
+2023-09-01T00:42:12.649Z - Received POST request on /api
+2023-09-01T00:42:12.649Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:51:24.820Z - Received POST request on /api
+2023-09-01T00:51:24.820Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:51:25.647Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:51:25.647Z - Received POST request on /api
+2023-09-01T00:53:19.670Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:53:19.669Z - Received POST request on /api
+2023-09-01T00:53:20.493Z - Received POST request on /api
+2023-09-01T00:53:20.493Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:55:38.620Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:55:38.620Z - Received POST request on /api
+2023-09-01T00:55:39.311Z - Received POST request on /api
+2023-09-01T00:55:39.311Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T00:55:51.758Z - Received POST request on /api
+2023-09-01T00:55:51.758Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:00:31.141Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:00:31.141Z - Received POST request on /api
+2023-09-01T01:00:32.028Z - Received POST request on /api
+2023-09-01T01:00:32.028Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:01:20.941Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:01:20.941Z - Received POST request on /api
+2023-09-01T01:01:21.762Z - Received POST request on /api
+2023-09-01T01:01:21.762Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:02:46.226Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:02:46.226Z - Received POST request on /api
+2023-09-01T01:02:47.065Z - Received POST request on /api
+2023-09-01T01:02:47.065Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:03:39.732Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:03:39.732Z - Received POST request on /api
+2023-09-01T01:03:40.747Z - Received POST request on /api
+2023-09-01T01:03:40.747Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:05:20.916Z - Received POST request on /api
+2023-09-01T01:05:20.916Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:05:21.716Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:05:21.716Z - Received POST request on /api
+2023-09-01T01:13:51.868Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:13:51.868Z - Received POST request on /api
+2023-09-01T01:13:52.573Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:13:52.573Z - Received POST request on /api
+2023-09-01T01:14:45.925Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:14:45.925Z - Received POST request on /api
+2023-09-01T01:14:46.584Z - Received POST request on /api
+2023-09-01T01:14:46.584Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:15:04.864Z - Received POST request on /api
+2023-09-01T01:15:04.864Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:15:33.797Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:15:33.797Z - Received POST request on /api
+2023-09-01T01:15:45.725Z - Received POST request on /api
+2023-09-01T01:15:45.725Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:15:46.170Z - Received POST request on /api
+2023-09-01T01:15:46.170Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:16:11.701Z - Received POST request on /api
+2023-09-01T01:16:11.701Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:23:29.763Z - Received POST request on /api
+2023-09-01T01:23:29.763Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:23:30.599Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:23:30.599Z - Received POST request on /api
+2023-09-01T01:59:31.926Z - Received POST request on /api
+2023-09-01T01:59:31.926Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:59:32.656Z - Received POST request on /api
+2023-09-01T01:59:32.656Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T01:59:59.517Z - Received POST request on /api
+2023-09-01T01:59:59.517Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:00:00.500Z - Received POST request on /api
+2023-09-01T02:00:00.500Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:02:41.476Z - Received POST request on /api
+2023-09-01T02:02:41.476Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:02:42.586Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:02:42.586Z - Received POST request on /api
+2023-09-01T02:03:21.292Z - Received POST request on /api
+2023-09-01T02:03:21.292Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:03:22.347Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:03:22.347Z - Received POST request on /api
+2023-09-01T02:04:50.018Z - Received POST request on /api
+2023-09-01T02:04:50.018Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:04:50.973Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:04:50.973Z - Received POST request on /api
+2023-09-01T02:07:42.766Z - Received POST request on /api
+2023-09-01T02:07:42.766Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:07:44.125Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:07:44.125Z - Received POST request on /api
+2023-09-01T02:08:27.061Z - Received POST request on /api
+2023-09-01T02:08:27.061Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:08:27.991Z - Received POST request on /api
+2023-09-01T02:08:27.991Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:01.821Z - Received POST request on /api
+2023-09-01T02:10:01.821Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:02.679Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:02.679Z - Received POST request on /api
+2023-09-01T02:10:27.183Z - Received POST request on /api
+2023-09-01T02:10:27.183Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:27.936Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:27.936Z - Received POST request on /api
+2023-09-01T02:10:43.914Z - Received POST request on /api
+2023-09-01T02:10:43.914Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:10:51.078Z - Received POST request on /api
+2023-09-01T02:10:51.078Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:12:35.809Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:12:35.809Z - Received POST request on /api
+2023-09-01T02:13:53.141Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:13:53.141Z - Received POST request on /api
+2023-09-01T02:13:54.817Z - Received POST request on /api
+2023-09-01T02:13:54.817Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:15:16.578Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:15:16.578Z - Received POST request on /api
+2023-09-01T02:15:17.624Z - Received POST request on /api
+2023-09-01T02:15:17.624Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:16:09.526Z - Received POST request on /api
+2023-09-01T02:16:09.526Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:16:10.297Z - Received POST request on /api
+2023-09-01T02:16:10.297Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:16:43.945Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:16:43.945Z - Received POST request on /api
+2023-09-01T02:16:45.172Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:16:45.171Z - Received POST request on /api
+2023-09-01T02:18:05.559Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:18:05.559Z - Received POST request on /api
+2023-09-01T02:21:11.838Z - Received POST request on /api
+2023-09-01T02:21:11.838Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:21:13.847Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:21:13.847Z - Received POST request on /api
+2023-09-01T02:21:40.835Z - Received POST request on /api
+2023-09-01T02:21:40.835Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:21:46.575Z - Received POST request on /api
+2023-09-01T02:21:46.575Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:30:48.783Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:30:48.783Z - Received POST request on /api
+2023-09-01T02:34:16.791Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:34:16.791Z - Received POST request on /api
+2023-09-01T02:34:36.286Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:34:36.286Z - Received POST request on /api
+2023-09-01T02:35:06.862Z - Received POST request on /api
+2023-09-01T02:35:06.862Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:35:07.672Z - Received POST request on /api
+2023-09-01T02:35:07.672Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:35:30.415Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:35:30.415Z - Received POST request on /api
+2023-09-01T02:35:31.056Z - Received POST request on /api
+2023-09-01T02:35:31.056Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:02.183Z - Received POST request on /api
+2023-09-01T02:50:02.183Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:02.845Z - Received POST request on /api
+2023-09-01T02:50:02.845Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:13.887Z - Received POST request on /api
+2023-09-01T02:50:13.887Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:41.014Z - Received POST request on /api
+2023-09-01T02:50:41.014Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:43.634Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:50:43.633Z - Received POST request on /api
+2023-09-01T02:51:22.037Z - Received POST request on /api
+2023-09-01T02:51:22.037Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:53:09.406Z - Received POST request on /api
+2023-09-01T02:53:09.406Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:53:11.025Z - Received POST request on /api
+2023-09-01T02:53:11.025Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:55:27.271Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:55:27.271Z - Received POST request on /api
+2023-09-01T02:55:28.284Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:55:28.284Z - Received POST request on /api
+2023-09-01T02:55:55.968Z - Received POST request on /api
+2023-09-01T02:55:55.968Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:56:09.479Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:56:09.478Z - Received POST request on /api
+2023-09-01T02:56:55.556Z - Received POST request on /api
+2023-09-01T02:56:55.556Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:56:56.355Z - Received POST request on /api
+2023-09-01T02:56:56.355Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:57:11.384Z - Received POST request on /api
+2023-09-01T02:57:11.384Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:59:46.313Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T02:59:46.313Z - Received POST request on /api
+2023-09-01T02:59:46.912Z - Received POST request on /api
+2023-09-01T02:59:46.912Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:00:10.135Z - Received POST request on /api
+2023-09-01T03:00:10.135Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:00:10.984Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:00:10.984Z - Received POST request on /api
+2023-09-01T03:04:56.225Z - Received POST request on /api
+2023-09-01T03:04:56.225Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:04:56.926Z - Received POST request on /api
+2023-09-01T03:04:56.926Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:05:15.351Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:05:15.351Z - Received POST request on /api
+2023-09-01T03:05:16.176Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:05:16.176Z - Received POST request on /api
+2023-09-01T03:05:25.818Z - Received POST request on /api
+2023-09-01T03:05:25.818Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:06:38.088Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:06:38.088Z - Received POST request on /api
+2023-09-01T03:06:38.823Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T03:06:38.823Z - Received POST request on /api
+2023-09-01T09:14:01.107Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:14:01.107Z - Received POST request on /api
+2023-09-01T09:14:01.927Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:14:01.927Z - Received POST request on /api
+2023-09-01T09:16:24.643Z - Received POST request on /api
+2023-09-01T09:16:24.643Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:26:52.099Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:26:52.099Z - Received POST request on /api
+2023-09-01T09:26:52.817Z - Received POST request on /api
+2023-09-01T09:26:52.817Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:27:19.248Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:27:19.248Z - Received POST request on /api
+2023-09-01T09:27:44.412Z - Received POST request on /api
+2023-09-01T09:27:44.412Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:28:02.189Z - Received POST request on /api
+2023-09-01T09:28:02.189Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:28:03.058Z - Received POST request on /api
+2023-09-01T09:28:03.058Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:12.295Z - Received POST request on /api
+2023-09-01T09:32:12.296Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:13.260Z - Received POST request on /api
+2023-09-01T09:32:13.260Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:24.569Z - Received POST request on /api
+2023-09-01T09:32:24.569Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:51.293Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:51.293Z - Received POST request on /api
+2023-09-01T09:32:52.412Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:32:52.412Z - Received POST request on /api
+2023-09-01T09:33:33.181Z - Received POST request on /api
+2023-09-01T09:33:33.181Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:33:35.001Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:33:35.001Z - Received POST request on /api
+2023-09-01T09:55:05.992Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:55:05.992Z - Received POST request on /api
+2023-09-01T09:55:06.728Z - Received POST request on /api
+2023-09-01T09:55:06.728Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:55:16.598Z - Received POST request on /api
+2023-09-01T09:55:16.598Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:55:19.225Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:55:19.225Z - Received POST request on /api
+2023-09-01T09:55:30.281Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:55:30.281Z - Received POST request on /api
+2023-09-01T09:56:03.784Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:56:03.783Z - Received POST request on /api
+2023-09-01T09:56:05.497Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T09:56:05.497Z - Received POST request on /api
+2023-09-01T10:04:27.673Z - Received POST request on /api
+2023-09-01T10:04:27.673Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:04:29.315Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:04:29.315Z - Received POST request on /api
+2023-09-01T10:05:00.200Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:05:00.200Z - Received POST request on /api
+2023-09-01T10:05:28.016Z - Received POST request on /api
+2023-09-01T10:05:28.016Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:06:00.241Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:06:00.241Z - Received POST request on /api
+2023-09-01T10:06:03.681Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:06:03.681Z - Received POST request on /api
+2023-09-01T10:09:06.008Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:09:06.008Z - Received POST request on /api
+2023-09-01T10:11:40.953Z - Received POST request on /api
+2023-09-01T10:11:40.953Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:11:41.930Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:11:41.930Z - Received POST request on /api
+2023-09-01T10:11:51.689Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:11:51.689Z - Received POST request on /api
+2023-09-01T10:12:53.441Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:12:53.441Z - Received POST request on /api
+2023-09-01T10:12:54.351Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:12:54.351Z - Received POST request on /api
+2023-09-01T10:13:04.456Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:13:04.456Z - Received POST request on /api
+2023-09-01T10:13:05.222Z - Received POST request on /api
+2023-09-01T10:13:05.222Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:13:41.025Z - Received POST request on /api
+2023-09-01T10:13:41.026Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:31:21.344Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:31:21.344Z - Received POST request on /api
+2023-09-01T10:31:22.103Z - Received POST request on /api
+2023-09-01T10:31:22.103Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:31:32.832Z - Received POST request on /api
+2023-09-01T10:31:32.832Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:38:21.223Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:38:21.223Z - Received POST request on /api
+2023-09-01T10:38:22.092Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:38:22.092Z - Received POST request on /api
+2023-09-01T10:43:21.012Z - Received POST request on /api
+2023-09-01T10:43:21.012Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:43:21.723Z - Received POST request on /api
+2023-09-01T10:43:21.723Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:43:45.818Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:43:45.818Z - Received POST request on /api
+2023-09-01T10:44:05.785Z - Received POST request on /api
+2023-09-01T10:44:05.785Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:45:23.709Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T10:45:23.708Z - Received POST request on /api
+2023-09-01T11:08:46.553Z - Received POST request on /api
+2023-09-01T11:08:46.553Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:08:47.166Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:08:47.166Z - Received POST request on /api
+2023-09-01T11:29:15.178Z - Received POST request on /api
+2023-09-01T11:29:15.178Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:29:16.438Z - Received POST request on /api
+2023-09-01T11:29:16.438Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:29:23.153Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:29:23.153Z - Received POST request on /api
+2023-09-01T11:29:36.257Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:29:36.257Z - Received POST request on /api
+2023-09-01T11:41:19.173Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T11:41:19.173Z - Received POST request on /api
+2023-09-01T12:03:51.880Z - Received POST request on /api
+2023-09-01T12:03:51.880Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T12:58:33.676Z - Received POST request on /api
+2023-09-01T12:58:33.676Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:05:06.197Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:05:06.197Z - Received POST request on /api
+2023-09-01T13:16:43.187Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:16:43.187Z - Received POST request on /api
+2023-09-01T13:18:44.739Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:18:44.739Z - Received POST request on /api
+2023-09-01T13:24:47.883Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:24:47.883Z - Received POST request on /api
+2023-09-01T13:29:03.771Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T13:29:03.771Z - Received POST request on /api
+2023-09-01T13:56:28.563Z - Received POST request on /api
+2023-09-01T13:56:28.563Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:00:02.252Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:00:02.252Z - Received POST request on /api
+2023-09-01T14:15:29.196Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:15:29.196Z - Received POST request on /api
+2023-09-01T14:15:41.981Z - Received POST request on /api
+2023-09-01T14:15:41.981Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:16:08.085Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:16:08.085Z - Received POST request on /api
+2023-09-01T14:17:14.229Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:17:14.229Z - Received POST request on /api
+2023-09-01T14:25:12.581Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:25:12.581Z - Received POST request on /api
+2023-09-01T14:32:35.544Z - Received POST request on /api
+2023-09-01T14:32:35.544Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:32:52.782Z - Received POST request on /api
+2023-09-01T14:32:52.782Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:34:11.230Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:34:11.230Z - Received POST request on /api
+2023-09-01T14:48:52.023Z - Server listening on port 8080
+2023-09-01T14:49:08.221Z - Received POST request on /api
+2023-09-01T14:49:08.221Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:50:53.759Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:50:53.759Z - Received POST request on /api
+2023-09-01T14:52:00.596Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:52:00.596Z - Received POST request on /api
+2023-09-01T14:52:36.436Z - Received POST request on /api
+2023-09-01T14:52:36.436Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:57:46.838Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:57:46.838Z - Received POST request on /api
+2023-09-01T14:57:55.461Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T14:57:55.461Z - Received POST request on /api
+2023-09-01T15:01:46.839Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:01:46.839Z - Received POST request on /api
+2023-09-01T15:02:45.990Z - Received POST request on /api
+2023-09-01T15:02:45.991Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:02:53.951Z - Received POST request on /api
+2023-09-01T15:02:53.951Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:09:58.448Z - Received POST request on /api
+2023-09-01T15:09:58.448Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:10:07.079Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:10:07.079Z - Received POST request on /api
+2023-09-01T15:26:26.384Z - Received POST request on /api
+2023-09-01T15:26:26.384Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:26:34.640Z - Received POST request on /api
+2023-09-01T15:26:34.640Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:33:20.752Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:33:20.752Z - Received POST request on /api
+2023-09-01T15:33:28.562Z - Received POST request on /api
+2023-09-01T15:33:28.562Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:42:28.585Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T15:42:28.585Z - Received POST request on /api
+2023-09-01T15:42:36.234Z - Received POST request on /api
+2023-09-01T15:42:36.234Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:03:19.072Z - Received POST request on /api
+2023-09-01T16:03:19.072Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:03:26.289Z - Received POST request on /api
+2023-09-01T16:03:26.289Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:06:05.690Z - Received POST request on /api
+2023-09-01T16:06:05.690Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:07:54.196Z - Received POST request on /api
+2023-09-01T16:07:54.196Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:14:10.675Z - Received POST request on /api
+2023-09-01T16:14:10.675Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:15:12.613Z - Received POST request on /api
+2023-09-01T16:15:12.613Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:19:33.802Z - Received POST request on /api
+2023-09-01T16:19:33.802Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:19:42.386Z - Received POST request on /api
+2023-09-01T16:19:42.386Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:19:59.803Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:19:59.803Z - Received POST request on /api
+2023-09-01T16:39:33.820Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:39:33.820Z - Received POST request on /api
+2023-09-01T16:39:41.902Z - Received POST request on /api
+2023-09-01T16:39:41.902Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:40:36.221Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:40:36.221Z - Received POST request on /api
+2023-09-01T16:40:43.511Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:40:43.511Z - Received POST request on /api
+2023-09-01T16:41:09.077Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:41:09.077Z - Received POST request on /api
+2023-09-01T16:41:16.094Z - Received POST request on /api
+2023-09-01T16:41:16.094Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:41:46.247Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:41:46.247Z - Received POST request on /api
+2023-09-01T16:42:04.398Z - Received POST request on /api
+2023-09-01T16:42:04.398Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:42:26.822Z - Received POST request on /api
+2023-09-01T16:42:26.822Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T16:42:37.279Z - Received POST request on /api
+2023-09-01T16:42:37.279Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:44:42.279Z - Server listening on port 8080
+2023-09-01T17:44:49.505Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:44:49.505Z - Received POST request on /api
+2023-09-01T17:44:59.954Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:44:59.954Z - Received POST request on /api
+2023-09-01T17:50:56.099Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:50:56.099Z - Received POST request on /api
+2023-09-01T17:57:47.699Z - Received POST request on /api
+2023-09-01T17:57:47.699Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:57:57.107Z - Received POST request on /api
+2023-09-01T17:57:57.107Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:58:59.487Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:58:59.487Z - Received POST request on /api
+2023-09-01T17:59:08.883Z - Received POST request on /api
+2023-09-01T17:59:08.883Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T17:59:23.788Z - Received POST request on /api
+2023-09-01T17:59:23.788Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T18:00:13.589Z - Received POST request on /api
+2023-09-01T18:00:13.589Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T18:00:24.013Z - Received POST request on /api
+2023-09-01T18:00:24.013Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T18:01:39.500Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T18:01:39.500Z - Received POST request on /api
+2023-09-01T18:01:53.151Z - Received POST request on /api
+2023-09-01T18:01:53.151Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-01T18:10:07.817Z - Server listening on port 8080
+2023-09-01T20:26:47.604Z - Server listening on port 8080
+2023-09-04T22:46:29.800Z - Received POST request on /api
+2023-09-04T22:46:29.800Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-04T22:46:31.372Z - Received POST request on /api
+2023-09-04T22:46:31.372Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-04T22:46:46.148Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-04T22:46:46.148Z - Received POST request on /api
+2023-09-04T22:47:45.414Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-04T22:47:45.414Z - Received POST request on /api
+2023-09-04T22:47:47.657Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-04T22:47:47.657Z - Received POST request on /api
+2023-09-05T16:59:30.676Z - Received POST request on /api
+2023-09-05T16:59:30.676Z - Error: Either selected API or required information for API call is missing
+2023-09-05T22:51:12.551Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-05T22:51:12.551Z - Received POST request on /api
+2023-09-06T00:04:52.982Z - Server listening on port 8080
+2023-09-06T09:29:28.750Z - Server listening on port 8080
+2023-09-06T16:45:08.434Z - Received POST request on /api
+2023-09-06T16:45:08.434Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T17:00:44.544Z - Received POST request on /api
+2023-09-06T17:00:44.544Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T17:00:48.585Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T17:00:48.585Z - Received POST request on /api
+2023-09-06T17:01:04.333Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T17:01:04.333Z - Received POST request on /api
+2023-09-06T18:51:43.022Z - Server listening on port 8080
+2023-09-06T19:12:15.031Z - Received POST request on /api
+2023-09-06T19:12:15.031Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:12:19.365Z - Received POST request on /api
+2023-09-06T19:12:19.365Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:17:48.143Z - Received POST request on /api
+2023-09-06T19:17:48.143Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:17:49.543Z - Received POST request on /api
+2023-09-06T19:17:49.543Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:18:44.070Z - Received POST request on /api
+2023-09-06T19:18:44.070Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:18:50.968Z - Received POST request on /api
+2023-09-06T19:18:50.968Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:20:40.597Z - Received POST request on /api
+2023-09-06T19:20:40.597Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:32:17.042Z - Received POST request on /api
+2023-09-06T19:32:17.042Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:32:20.517Z - Received POST request on /api
+2023-09-06T19:32:20.517Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:33:02.602Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:33:02.602Z - Received POST request on /api
+2023-09-06T19:33:04.093Z - Received POST request on /api
+2023-09-06T19:33:04.093Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:36:40.895Z - Received POST request on /api
+2023-09-06T19:36:40.895Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:36:43.123Z - Received POST request on /api
+2023-09-06T19:36:43.123Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:36:55.399Z - Received POST request on /api
+2023-09-06T19:36:55.399Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:36:57.033Z - Received POST request on /api
+2023-09-06T19:36:57.033Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:47:16.554Z - Received POST request on /api
+2023-09-06T19:47:16.554Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:47:18.140Z - Received POST request on /api
+2023-09-06T19:47:18.140Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:51:16.001Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:51:16.001Z - Received POST request on /api
+2023-09-06T19:51:17.387Z - Received POST request on /api
+2023-09-06T19:51:17.387Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:53:25.118Z - Received POST request on /api
+2023-09-06T19:53:25.118Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:53:27.218Z - Received POST request on /api
+2023-09-06T19:53:27.218Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:55:42.673Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T19:55:42.673Z - Received POST request on /api
+2023-09-06T19:55:43.704Z - Received POST request on /api
+2023-09-06T19:55:43.704Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:02:09.314Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:02:09.314Z - Received POST request on /api
+2023-09-06T20:02:10.486Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:02:10.486Z - Received POST request on /api
+2023-09-06T20:04:44.553Z - Received POST request on /api
+2023-09-06T20:04:44.553Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:05:08.484Z - Received POST request on /api
+2023-09-06T20:05:08.484Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:38:25.379Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:38:25.379Z - Received POST request on /api
+2023-09-06T20:39:28.491Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:39:28.491Z - Received POST request on /api
+2023-09-06T20:47:15.203Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T20:47:15.203Z - Received POST request on /api
+2023-09-06T20:47:17.432Z - Received POST request on /api
+2023-09-06T20:47:17.432Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:03:53.068Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:03:53.068Z - Received POST request on /api
+2023-09-06T21:03:55.514Z - Received POST request on /api
+2023-09-06T21:03:55.514Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:07:58.580Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:07:58.580Z - Received POST request on /api
+2023-09-06T21:08:00.311Z - Received POST request on /api
+2023-09-06T21:08:00.312Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:08:10.995Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:08:10.994Z - Received POST request on /api
+2023-09-06T21:11:25.751Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:11:25.751Z - Received POST request on /api
+2023-09-06T21:11:27.778Z - Received POST request on /api
+2023-09-06T21:11:27.778Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:11:43.499Z - Received POST request on /api
+2023-09-06T21:11:43.499Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:15:09.070Z - Received POST request on /api
+2023-09-06T21:15:09.070Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:15:10.032Z - Received POST request on /api
+2023-09-06T21:15:10.032Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:15:55.220Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:15:55.220Z - Received POST request on /api
+2023-09-06T21:15:56.534Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:15:56.534Z - Received POST request on /api
+2023-09-06T21:19:09.269Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:19:09.269Z - Received POST request on /api
+2023-09-06T21:19:11.688Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:19:11.688Z - Received POST request on /api
+2023-09-06T21:21:18.284Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:21:18.284Z - Received POST request on /api
+2023-09-06T21:21:36.565Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:21:36.565Z - Received POST request on /api
+2023-09-06T21:21:39.181Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T21:21:39.181Z - Received POST request on /api
+2023-09-06T21:48:01.629Z - Server listening on port 8080
+2023-09-06T22:15:49.655Z - Received POST request on /api
+2023-09-06T22:15:49.656Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:15:51.985Z - Received POST request on /api
+2023-09-06T22:15:51.985Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:19:05.562Z - Server listening on port 8080
+2023-09-06T22:24:42.795Z - Received POST request on /api
+2023-09-06T22:24:42.795Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:24:46.854Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:24:46.854Z - Received POST request on /api
+2023-09-06T22:31:10.225Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:31:10.225Z - Received POST request on /api
+2023-09-06T22:32:14.018Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:32:14.018Z - Received POST request on /api
+2023-09-06T22:32:14.947Z - Received POST request on /api
+2023-09-06T22:32:14.947Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-06T22:36:33.351Z - Server listening on port 8080
+2023-09-06T22:38:25.234Z - Server listening on port 8080
+2023-09-06T22:39:03.332Z - Server listening on port 8080
+2023-09-07T00:18:30.680Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-07T00:18:30.680Z - Received POST request on /api
+2023-09-08T20:13:28.860Z - Server listening on port 8080
+2023-09-08T20:13:37.314Z - Received POST request on /api
+2023-09-08T20:13:37.314Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-08T20:46:19.098Z - Server listening on port 8080
+2023-09-09T10:40:03.025Z - Received POST request on /api
+2023-09-09T10:40:03.025Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:47:51.200Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:47:51.200Z - Received POST request on /api
+2023-09-09T10:58:58.665Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:58:58.665Z - Received POST request on /api
+2023-09-09T10:59:11.432Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:59:11.432Z - Received POST request on /api
+2023-09-09T10:59:30.121Z - Received POST request on /api
+2023-09-09T10:59:30.121Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:59:50.173Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T10:59:50.173Z - Received POST request on /api
+2023-09-09T11:07:37.407Z - Received POST request on /api
+2023-09-09T11:07:37.407Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:07:39.367Z - Received POST request on /api
+2023-09-09T11:07:39.367Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:08:38.970Z - Server listening on port 8080
+2023-09-09T11:09:08.704Z - Received POST request on /api
+2023-09-09T11:09:08.704Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:09:11.106Z - Received POST request on /api
+2023-09-09T11:09:11.106Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:09:35.170Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:09:35.170Z - Received POST request on /api
+2023-09-09T11:09:37.508Z - Received POST request on /api
+2023-09-09T11:09:37.508Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:10:04.023Z - Received POST request on /api
+2023-09-09T11:10:04.023Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:10:06.721Z - Received POST request on /api
+2023-09-09T11:10:06.721Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:30:23.494Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T11:30:23.494Z - Received POST request on /api
+2023-09-09T13:59:32.521Z - Received POST request on /api
+2023-09-09T13:59:32.521Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T16:56:36.456Z - Received POST request on /api
+2023-09-09T16:56:36.456Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-09T19:53:39.272Z - Server listening on port 8080
+2023-09-09T23:43:15.759Z - Server listening on port 8080
+2023-09-09T23:53:35.858Z - Server listening on port 8080
+2023-09-09T23:55:01.972Z - Server listening on port 8080
+2023-09-09T23:58:34.314Z - Server listening on port 8080
+2023-09-10T00:01:29.551Z - Server listening on port 8080
+2023-09-10T00:05:02.484Z - Server listening on port 8080
+2023-09-10T00:05:53.573Z - Server listening on port 8080
+2023-09-10T00:09:01.500Z - Server listening on port 8080
+2023-09-10T00:39:27.784Z - Server listening on port 8080
+2023-09-10T00:47:04.854Z - Server listening on port 8080
+2023-09-10T00:47:54.517Z - Server listening on port 8080
+2023-09-10T00:48:53.735Z - Server listening on port 8080
+2023-09-10T00:58:30.356Z - Server listening on port 8080
+2023-09-10T01:24:23.484Z - Server listening on port 8080
+2023-09-10T01:37:56.175Z - Server listening on port 8080
+2023-09-10T01:48:31.534Z - Server listening on port 8080
+2023-09-10T01:54:01.762Z - Server listening on port 8080
+2023-09-10T02:01:17.590Z - Server listening on port 8080
+2023-09-10T04:11:42.455Z - Server listening on port 8080
+2023-09-10T04:14:25.477Z - Server listening on port 8080
+2023-09-10T04:19:27.397Z - Server listening on port 8080
+2023-09-10T04:21:30.760Z - Server listening on port 8080
+2023-09-10T04:26:53.864Z - Server listening on port 8080
+2023-09-10T11:28:10.922Z - Server listening on port 8080
+2023-09-10T11:33:04.729Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T11:33:04.729Z - Received POST request on /api
+2023-09-10T15:09:46.524Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T15:09:46.524Z - Received POST request on /api
+2023-09-10T15:09:49.163Z - Received POST request on /api
+2023-09-10T15:09:49.163Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T15:10:11.260Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T15:10:11.259Z - Received POST request on /api
+2023-09-10T15:11:14.990Z - Received POST request on /api
+2023-09-10T15:11:14.990Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T15:11:24.516Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T15:11:24.515Z - Received POST request on /api
+2023-09-10T15:18:30.706Z - Server listening on port 8080
+2023-09-10T15:44:43.350Z - Server listening on port 8080
+2023-09-10T16:19:47.629Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:19:47.629Z - Received POST request on /api
+2023-09-10T16:20:29.466Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:20:29.466Z - Received POST request on /api
+2023-09-10T16:23:58.046Z - Received POST request on /api
+2023-09-10T16:23:58.046Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:26:04.884Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:26:04.884Z - Received POST request on /api
+2023-09-10T16:26:49.108Z - Received POST request on /api
+2023-09-10T16:26:49.108Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:31:01.310Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T16:31:01.310Z - Received POST request on /api
+2023-09-10T17:24:16.992Z - Received POST request on /api
+2023-09-10T17:24:16.992Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T17:34:45.594Z - Received POST request on /api
+2023-09-10T17:34:45.594Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:25:30.496Z - Received POST request on /api
+2023-09-10T18:25:30.496Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:36:13.249Z - Received POST request on /api
+2023-09-10T18:36:13.249Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:40:10.587Z - Received POST request on /api
+2023-09-10T18:40:10.587Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:40:45.314Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:40:45.314Z - Received POST request on /api
+2023-09-10T18:46:00.221Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:46:00.221Z - Received POST request on /api
+2023-09-10T18:46:26.300Z - Received POST request on /api
+2023-09-10T18:46:26.300Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:49:22.413Z - Received POST request on /api
+2023-09-10T18:49:22.413Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:55:14.920Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:55:14.920Z - Received POST request on /api
+2023-09-10T18:55:41.334Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T18:55:41.334Z - Received POST request on /api
+2023-09-10T19:06:50.076Z - Received POST request on /api
+2023-09-10T19:06:50.076Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:09:03.734Z - Received POST request on /api
+2023-09-10T19:09:03.734Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:10:15.823Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:10:15.823Z - Received POST request on /api
+2023-09-10T19:18:02.102Z - Received POST request on /api
+2023-09-10T19:18:02.103Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:20:04.632Z - Received POST request on /api
+2023-09-10T19:20:04.632Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:22:55.775Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T19:22:55.775Z - Received POST request on /api
+2023-09-10T19:46:14.995Z - Server listening on port 8080
+2023-09-10T19:50:09.132Z - Server listening on port 8080
+2023-09-10T20:02:14.798Z - Received POST request on /api
+2023-09-10T20:02:14.798Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:17:54.425Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:17:54.425Z - Received POST request on /api
+2023-09-10T20:23:16.548Z - Received POST request on /api
+2023-09-10T20:23:16.548Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:30:15.197Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:30:15.197Z - Received POST request on /api
+2023-09-10T20:41:28.007Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:41:28.007Z - Received POST request on /api
+2023-09-10T20:42:39.371Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-10T20:42:39.371Z - Received POST request on /api
+2023-09-11T00:08:41.740Z - Server listening on port 8080
+2023-09-11T13:00:20.178Z - Server listening on port 8080
+2023-09-11T13:05:01.172Z - Received POST request on /api
+2023-09-11T13:05:01.172Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:30:50.437Z - Received POST request on /api
+2023-09-11T13:30:50.437Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:31:01.790Z - Received POST request on /api
+2023-09-11T13:31:01.790Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:46:09.362Z - Received POST request on /api
+2023-09-11T13:46:09.363Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:46:28.068Z - Received POST request on /api
+2023-09-11T13:46:28.068Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:47:28.978Z - Received POST request on /api
+2023-09-11T13:47:28.979Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T13:48:21.356Z - Received POST request on /api
+2023-09-11T13:48:21.356Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-11T18:06:01.602Z - Server listening on port 8080
+2023-09-11T18:11:50.674Z - Server listening on port 8080
+2023-09-11T18:13:38.401Z - Server listening on port 8080
+2023-09-11T18:17:40.123Z - Server listening on port 8080
+2023-09-11T18:25:40.558Z - Server listening on port 8080
+2023-09-11T23:46:45.591Z - Server listening on port 8080
+2023-09-11T23:49:44.941Z - Server listening on port 8080
+2023-09-11T23:54:01.889Z - Server listening on port 8080
+2023-09-12T00:41:10.483Z - Received POST request on /api
+2023-09-12T00:41:10.483Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:00:46.285Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:00:46.285Z - Received POST request on /api
+2023-09-12T01:02:59.559Z - Received POST request on /api
+2023-09-12T01:02:59.559Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:06:45.704Z - Received POST request on /api
+2023-09-12T01:06:45.705Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:06:47.924Z - Received POST request on /api
+2023-09-12T01:06:47.924Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:25:24.581Z - Received POST request on /api
+2023-09-12T01:25:24.581Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:26:34.441Z - Received POST request on /api
+2023-09-12T01:26:34.441Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:41:36.224Z - Received POST request on /api
+2023-09-12T01:41:36.224Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:41:58.907Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:41:58.907Z - Received POST request on /api
+2023-09-12T01:43:21.730Z - Received POST request on /api
+2023-09-12T01:43:21.730Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:43:51.235Z - Received POST request on /api
+2023-09-12T01:43:51.235Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:44:05.120Z - Received POST request on /api
+2023-09-12T01:44:05.121Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:44:19.060Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T01:44:19.060Z - Received POST request on /api
+2023-09-12T02:43:15.692Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T02:43:15.692Z - Received POST request on /api
+2023-09-12T03:21:44.815Z - Received POST request on /api
+2023-09-12T03:21:44.815Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T03:23:30.203Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T03:23:30.203Z - Received POST request on /api
+2023-09-12T03:24:15.882Z - Received POST request on /api
+2023-09-12T03:24:15.882Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T03:24:57.074Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T03:24:57.074Z - Received POST request on /api
+2023-09-12T03:25:59.080Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T03:25:59.080Z - Received POST request on /api
+2023-09-12T14:02:23.596Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:02:23.596Z - Received POST request on /api
+2023-09-12T14:28:45.335Z - Received POST request on /api
+2023-09-12T14:28:45.336Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:29:18.026Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:29:18.026Z - Received POST request on /api
+2023-09-12T14:29:55.720Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:29:55.720Z - Received POST request on /api
+2023-09-12T14:29:56.868Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:29:56.868Z - Received POST request on /api
+2023-09-12T14:30:31.584Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:30:31.584Z - Received POST request on /api
+2023-09-12T14:31:45.807Z - Received POST request on /api
+2023-09-12T14:31:45.807Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:31:48.099Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:31:48.099Z - Received POST request on /api
+2023-09-12T14:32:06.402Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T14:32:06.402Z - Received POST request on /api
+2023-09-12T15:30:06.695Z - Received POST request on /api
+2023-09-12T15:30:06.695Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T15:32:14.681Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T15:32:14.681Z - Received POST request on /api
+2023-09-12T15:38:57.901Z - Received POST request on /api
+2023-09-12T15:38:57.901Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T18:18:31.637Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T18:18:31.636Z - Received POST request on /api
+2023-09-12T19:04:57.237Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:04:57.237Z - Received POST request on /api
+2023-09-12T19:09:06.340Z - Received POST request on /api
+2023-09-12T19:09:06.340Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:09:48.834Z - Received POST request on /api
+2023-09-12T19:09:48.834Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:17:10.506Z - Received POST request on /api
+2023-09-12T19:17:10.506Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:17:21.047Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:17:21.047Z - Received POST request on /api
+2023-09-12T19:20:09.649Z - Received POST request on /api
+2023-09-12T19:20:09.650Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:22:52.047Z - Received POST request on /api
+2023-09-12T19:22:52.047Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:23:02.159Z - Received POST request on /api
+2023-09-12T19:23:02.159Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T19:24:03.028Z - Received POST request on /api
+2023-09-12T19:24:03.028Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-12T23:19:45.500Z - Server listening on port 8080
+2023-09-13T01:06:42.263Z - Received POST request on /api
+2023-09-13T01:06:42.263Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-13T01:06:43.075Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-13T01:06:43.075Z - Received POST request on /api
+2023-09-13T01:06:59.208Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-09-13T01:06:59.208Z - Received POST request on /api
+2023-09-13T01:07:05.423Z - Received POST request on /api
+2023-09-13T01:07:05.423Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T15:58:40.191Z - Server listening on port 8080
+2023-10-03T16:03:09.697Z - Received POST request on /api
+2023-10-03T16:03:09.697Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T16:03:10.073Z - OpenAI response: {"error":{"message":"Your account is not active, please check your billing details on our website.","type":"billing_not_active","param":null,"code":"billing_not_active"}}
+2023-10-03T17:01:52.094Z - Server listening on port 8080
+2023-10-03T17:03:02.250Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T17:03:02.250Z - Received POST request on /api
+2023-10-03T17:03:03.641Z - OpenAI response: {"error":{"message":"Your account is not active, please check your billing details on our website.","type":"billing_not_active","param":null,"code":"billing_not_active"}}
+2023-10-03T17:03:03.649Z - Received POST request on /api
+2023-10-03T17:03:03.649Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T17:03:06.083Z - OpenAI response: {"error":{"message":"Your account is not active, please check your billing details on our website.","type":"billing_not_active","param":null,"code":"billing_not_active"}}
+2023-10-03T17:04:00.509Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T17:04:00.509Z - Received POST request on /api
+2023-10-03T17:04:00.948Z - OpenAI response: {"error":{"message":"Your account is not active, please check your billing details on our website.","type":"billing_not_active","param":null,"code":"billing_not_active"}}
+2023-10-03T17:04:00.954Z - Received POST request on /api
+2023-10-03T17:04:00.955Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-03T17:04:01.400Z - OpenAI response: {"error":{"message":"Your account is not active, please check your billing details on our website.","type":"billing_not_active","param":null,"code":"billing_not_active"}}
+2023-10-03T23:47:59.088Z - Server listening on port 8080
+2023-10-04T00:05:27.568Z - Server listening on port 8080
+2023-10-04T00:16:41.851Z - Server listening on port 8080
+2023-10-04T00:26:42.631Z - Server listening on port 8080
+2023-10-04T00:31:49.640Z - Server listening on port 8080
+2023-10-04T00:34:31.675Z - Received POST request on /api
+2023-10-04T00:34:31.675Z - Open Source selected and model name found. Preparing to call Flask app endpoint.
+2023-10-04T00:34:31.679Z - API error: FetchError: request to http://localhost:5000/generate failed, reason: 
+2023-10-04T00:35:19.759Z - Received POST request on /api
+2023-10-04T00:35:19.759Z - Open Source selected and model name found. Preparing to call Flask app endpoint.
+2023-10-04T00:35:19.761Z - API error: FetchError: request to http://localhost:5000/generate failed, reason: 
+2023-10-04T00:36:43.667Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T00:36:43.667Z - Received POST request on /api
+2023-10-04T00:39:44.721Z - Server listening on port 8080
+2023-10-04T00:42:40.020Z - Server listening on port 8080
+2023-10-04T00:44:39.774Z - Server listening on port 8080
+2023-10-04T00:47:35.398Z - Server listening on port 8080
+2023-10-04T00:55:15.394Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T00:55:15.394Z - Received POST request on /api
+2023-10-04T00:57:57.761Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T00:57:57.761Z - Received POST request on /api
+2023-10-04T01:01:26.529Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:01:26.529Z - Received POST request on /api
+2023-10-04T01:01:27.827Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:01:27.827Z - Received POST request on /api
+2023-10-04T01:02:44.929Z - Received POST request on /api
+2023-10-04T01:02:44.929Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:02:46.226Z - Received POST request on /api
+2023-10-04T01:02:46.227Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:03:09.339Z - Received POST request on /api
+2023-10-04T01:03:09.339Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:05:08.555Z - Received POST request on /api
+2023-10-04T01:05:08.555Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:05:09.888Z - Received POST request on /api
+2023-10-04T01:05:09.888Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:05:31.203Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-04T01:05:31.203Z - Received POST request on /api
+2023-10-09T17:48:36.194Z - Server listening on port 8080
+2023-10-09T17:59:51.147Z - Received POST request on /api
+2023-10-09T17:59:51.147Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-09T18:00:13.224Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-09T18:00:13.224Z - Received POST request on /api
+2023-10-09T18:01:28.187Z - Received POST request on /api
+2023-10-09T18:01:28.187Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-09T18:01:31.592Z - Received POST request on /api
+2023-10-09T18:01:31.592Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-09T18:02:10.848Z - OpenAI selected and API key found. Preparing to call OpenAI API.
+2023-10-09T18:02:10.848Z - Received POST request on /api
+2023-10-11T00:22:32.739Z - Server listening on port 8080
+2023-10-14T22:35:58.133Z - Server listening on port 8080
+2023-10-15T09:38:38.669Z - Server listening on port 8080

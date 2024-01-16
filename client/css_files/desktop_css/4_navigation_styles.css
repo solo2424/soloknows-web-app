@@ -1,0 +1,138 @@
+
+/* ---------------------- 4. Navigation Styles -------------------------------------- */
+
+/* Reset some properties */
+nav,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: var(--nav-background-color);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1005;
+    height: 5%;
+    /* Responsive unit */
+    display: flex;
+    /* Flex applied here */
+    align-items: center;
+    /* Vertically center all children */
+}
+
+/* Style the navigation links */
+nav ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* Ensure the ul takes up the full width of the nav */
+    justify-content: space-between;
+    /* Distribute child elements equally */
+}
+
+nav ul li {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    /* Added flex here */
+    align-items: center;
+    /* Center items vertically */
+}
+
+nav ul li a {
+    color: var(--text-light-color);
+    text-align: center;
+    padding: 0 1.6vw;
+    /* Responsive unit */
+    height: 100%;
+    display: flex;
+    /* Flex applied here too */
+    align-items: center;
+    /* Center items vertically */
+}
+
+/* Style the image within the link */
+nav ul li a img {
+    height: 1.2vh;
+    /* Responsive unit */
+    width: 1.2vw;
+    /* Responsive unit */
+}
+
+/* Change color on hover */
+nav ul li:hover {
+    background-color: var(--navHover-background-color);
+    transition: background-color 0.2s;
+}
+
+/* -------------------- User Icon Style -------------------- */
+#user-icon {
+    width: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    height: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    /* Increased font size */
+    vertical-align: middle;
+    /* Center vertically */
+}
+
+/* -------------------- User Profile Class -------------------- */
+.user-profile {
+    position: relative;
+}
+
+/* -------------------- Icon within User Profile -------------------- */
+.user-profile .icon {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    width: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    height: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    vertical-align: middle;
+    /* Center vertically */
+}
+
+/* -------------------- Replace Avatar Container -------------------- */
+#replaceAvatar {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    width: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    height: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    vertical-align: middle;
+    /* Center vertically */
+}
+
+/* -------------------- Icon within Replace Avatar Container -------------------- */
+#replaceAvatar .icon {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    width: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    height: clamp(20px, 5vw, 28px);
+    /* Increased max size */
+    vertical-align: middle;
+    /* Center vertically */
+}

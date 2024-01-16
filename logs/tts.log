@@ -1,0 +1,10 @@
+2023-08-13T11:50:35:  * Serving Flask app 'text_to_speech_server' (lazy loading)
+2023-08-13T11:50:35:  * Environment: production
+2023-08-13T11:50:35:    WARNING: This is a development server. Do not use it in a production deployment.
+2023-08-13T11:50:35:    Use a production WSGI server instead.
+2023-08-13T11:50:35:  * Debug mode: on
+2023-08-13T15:09:10:  * Serving Flask app 'text_to_speech_server' (lazy loading)
+2023-08-13T15:09:10:  * Environment: production
+2023-08-13T15:09:10:    WARNING: This is a development server. Do not use it in a production deployment.
+2023-08-13T15:09:10:    Use a production WSGI server instead.
+2023-08-13T15:09:10:  * Debug mode: on

@@ -1,0 +1,36 @@
+/* -------------------------- 2. Global Styles for Mobile --------------------------------------- */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: fixed;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: width 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* This ensures padding and borders are included in the element's total width and height */
+}
+
+button:focus,
+input[type="checkbox"]:focus,
+a:focus,
+label:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}

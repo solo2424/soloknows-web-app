@@ -1,0 +1,52 @@
+import logging
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from transformers import AutoProcessor, BarkModel
+import numpy as np
+import wave
+import io
+import torch
+
+# Configure logging with timestamps
+logging.basicConfig(filename='logs/tts_cli.log', level=logging.DEBUG, format='%(asctime)s: %(message)s')
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.DEBUG)
+
+app = Flask(__name__)
+CORS(app)
+
+logging.info('Initializing the processor and model...')
+processor = AutoProcessor.from_pretrained("suno/bark")
+model = BarkModel.from_pretrained("suno/bark")
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+logging.info(f'Using device: {device}')
+
+@app.route('/text-to-speech', methods=['POST'])
+def text_to_speech():
+    logging.info('Received request for text-to-speech...')
+    text = request.json['text']
+    voice_preset = "v2/en_speaker_8"
+    inputs = processor(text, voice_preset=voice_preset, return_tensors="pt")
+    inputs = {key: value.to(device) for key, value in inputs.items()}
+    audio_array = model.generate(**inputs)
+    audio_array = audio_array.cpu().numpy().squeeze()
+    audio_array = (audio_array / np.max(np.abs(audio_array)) * 32767).astype(np.int16)
+
+    audio_io = io.BytesIO()
+    with wave.open(audio_io, 'wb') as wave_file:
+        wave_file.setnchannels(1)
+        wave_file.setsampwidth(2)
+        wave_file.setframerate(22050)
+        wave_file.writeframes(audio_array.tobytes())
+
+    audio_data = audio_io.getvalue().decode('latin1')
+
+    logging.info('Text-to-speech conversion successful!')
+    return jsonify({'audio': audio_data})
+
+if __name__ == '__main__':
+    logging.info('Starting the server...')
+    app.run(debug=True)
+    logging.info('Server stopped.')

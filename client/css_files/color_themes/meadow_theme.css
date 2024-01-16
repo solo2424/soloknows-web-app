@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #62B533;
+    /* Green */
+    --secondary-color: #9BCA6D;
+    /* Light Green */
+    --tertiary-color: #E2F0D6;
+    /* Light Greenish Yellow */
+    --text-light-color: #000000;
+    --text-dark-color: #000000;
+    --background-color: #F0F8E2;
+    /* Honeydew Green */
+    --border-color: #C8E3AA;
+    /* Light Green */
+    --nav-background-color: #62B533;
+    /* Green */
+    --sidebar-background-color: #F0F8E2;
+    /* Honeydew Green */
+    --savedChats-background-color: #9BCA6D;
+    /* Light Green */
+    --navHover-background-color: #9BCA6D;
+    /* Light Green */
+    --messages-background-color: #F0F8E2;
+    /* Honeydew Green */
+    --messages-bot-bubble-color: #9BCA6D;
+    /* Light Green */
+    --messages-bot-text-color: #000000;
+    --messages-user-bubble-color: #62B533;
+    /* Green */
+    --messages-user-text-color: #000000;
+    --timestamp-text-color: #416B00;
+    /* Forest Green */
+    --scrollbar-color: #C8E3AA;
+    /* Light Green */
+    --scrollbar-hover-color: #A6D785;
+    /* Light Green */
+    --button-hover-color: #9BCA6D;
+    /* Light Green */
+    --user-info-bgcolor: #9BCA6D;
+    /* Light Green */
+    --usermenu-background-color: #ffffff;
+}

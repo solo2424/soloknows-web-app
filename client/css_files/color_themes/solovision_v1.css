@@ -1,0 +1,31 @@
+:root {
+
+    --primary-color:#43B653;
+    --secondary-color: #DB3335;
+
+    --nav-background-color: #577EC0;
+    --navHover-background-color: #95B3E3;
+
+    --messages-user-bubble-color: #DB3335;
+    --scrollbar-color: #F3C218;
+    --scrollbar-hover-color: #DB33357e;
+
+    --messages-bot-bubble-color: #577EC0;
+    --sidebar-background-color:#fff;
+    --user-info-bgcolor: #F3C218;
+
+    --usermenu-background-color: #fff;
+    --savedChats-background-color:#F3C218;
+    --text-light-color: #fff;
+    --background-color:  #fff;
+    --messages-background-color: #fff;
+    --timestamp-text-color: #fff;
+    --button-hover-color: #fff;
+
+    --text-dark-color: #222;
+    --messages-bot-text-color: #222;
+    --messages-user-text-color: #222;
+
+    --border-color: #43B653;
+
+}
